@@ -1,0 +1,27 @@
+.btn-secondary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn:focus {
+  color: #fff;
+}
+
+img {
+  max-width: 350px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.col-4 {
+  max-width: 100%;
+}
