@@ -7,12 +7,12 @@ class ShoppingCartItem extends Component {
     return (
       <ul>
         <li className="minicart-item">
-            <div className="minicart-details-name">Item
+            <div className="minicart-details-name">{this.props.title}
             </div>
             <div className="minicart-details-remove">
                 <button className="minicart-remove">×</button>
             </div>
-            <div className="minicart-details-price"> <span className="minicart-price">$0.02</span> </div>
+            <div className="minicart-details-price"> <span className="minicart-price">${this.props.cost}</span> </div>
         </li>
       </ul>
     );

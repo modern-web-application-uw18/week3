@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Product.css';
-import ShoppingCartItem from '../ShoppingCart/ShoppingCartItem';
 
 class Product extends Component {
+  
 
+addProduct = (event) => {
+  const id = event.target.value;
+  
+  // TODO: How do I call addProduct on the ProductList component?
+  // productList.addProduct(id);
+}
 
 
   render() {
@@ -15,7 +21,7 @@ class Product extends Component {
         <img src={this.props.image} alt="" />
         <h2>{this.props.title}</h2>
         <p>${this.props.cost}</p>
-        <button value={this.props.key} onClick={this.addItem} className="btn btn-secondary">Add to cart</button>
+        <button value={this.props.id} onClick={this.addProduct} className="btn btn-secondary">Add to cart</button>
         
       </div> 
          

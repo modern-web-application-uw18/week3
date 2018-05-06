@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Product from './Product/Product';
-import airbnbs from './airbnbs.json';
+import ProductList from './ProductList/ProductList';
 import ShoppingCart from './ShoppingCart/ShoppingCart';
 
 class App extends Component {
-  
   
   
   render() {
@@ -13,11 +11,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <ShoppingCart />
-          <div className="row">
-             {airbnbs.map((airbnb, index) =>
-              <Product key={index} title={airbnb.title} image={airbnb.image} cost={airbnb.payment.cost} />
-            )}
-          </div>
+          <ProductList />
         </div>        
       </div>
     );
