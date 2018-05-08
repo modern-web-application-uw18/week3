@@ -1,7 +1,5 @@
 # Assignment 3
 
-## Getting Started
-
 1. Fork this repository and clone the code to your machine.
 2. Setup your application
    ```bash
