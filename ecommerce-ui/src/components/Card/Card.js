@@ -20,28 +20,32 @@ const layout = (props) => (
 
     <div className={classes.Card} style={{ backgroundImage: `url(${props.item.image})` }}>
 
-   
-            <div className={classes.Title}>
-                {props.item.title}
-            </div>
+
+        <div className={classes.Title}>
+            {props.item.title}
+        </div>
 
 
-            <div className={classes.UpperRight}>
-                {props.item.houseType}
-            </div>
-       
+        <div className={classes.UpperRight}>
+
+            <div className={classes.AlignRight}>
+                $ {props.item.payment.cost}
+      </div>
+
+        </div>
 
 
 
 
-            <div className={classes.Rating}>
-                {props.item.houseType}
-            </div>
+
+        <div className={classes.Rating}>
+            {props.item.houseType}
+        </div>
 
 
-            <div className={classes.LowerRight}>
-                {props.item.houseType}
-            </div>
+        <div className={classes.LowerRight}>
+            {props.item.houseType}
+        </div>
 
     </div>
 
