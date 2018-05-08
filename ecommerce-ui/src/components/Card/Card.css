@@ -1,0 +1,95 @@
+.Card {
+    height: 185px;
+    width: 500px;
+    min-width: 40%;
+    display: inline-flex;
+    margin: 5px;
+    background-position: 50% 50% !important;
+    background-size: cover!important;
+    text-align: left !important;
+    padding: 5px;
+    position: relative;
+    flex-wrap: wrap;
+    border: solid 1px #eeeeee;
+}
+
+
+.Title {
+    background-color: #ffffff;
+    color: black;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    display: inline-flex;    
+    opacity: 0.90;
+}
+
+
+.Rating {
+    background-color: #b10000;
+    color: rgb(231, 231, 231);
+    width: 50%;
+    height: 25%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    display: inline-flex;    
+    opacity: 0.90;
+}
+
+
+.UpperRight {
+    background-color: #1a1b1b;
+    color: rgb(231, 231, 231);
+    width: 48%;
+    height: 50%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    display: inline-flex; 
+    margin-left: 5px;   
+    opacity: 0.90;
+}
+
+.LowerRight {
+    background-color: #1a1b1b;
+    color: rgb(231, 231, 231);
+    width: 48%;
+    height: 50%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    display: inline-flex; 
+    margin-left: 5px;   
+    opacity: 0.90;
+}
+
+.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+ }
+
+
+@media (max-width: 650px) {
+    .Card {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .Title .Rating .UpperRight .LowerLeft {
+        font-size: 20px;
+    }
+
+
+}
+ 

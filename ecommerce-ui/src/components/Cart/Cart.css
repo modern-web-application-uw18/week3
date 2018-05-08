@@ -1,0 +1,19 @@
+.Cart {
+    background-color: rgb(95, 95, 95);
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: right;
+
+}
+
+
+@media (max-width: 650px) {
+    .Cart {
+        font-size: 30px;
+    }
+}
