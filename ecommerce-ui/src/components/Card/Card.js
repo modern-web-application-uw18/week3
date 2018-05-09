@@ -9,16 +9,6 @@ import Star from '../Star/Star';
 const layout = (props) => (
 
 
-    // <div className="card" style={{ width: '18rem' }}>
-    //     <img className="card-img-top" src={props.item.image} alt="Card image cap" />
-    //     <div className="card-body">
-    //         <h5 className="card-title">Card title</h5>
-    //         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    //         <a href="#" className="btn btn-primary">Go somewhere</a>
-    //     </div>
-    // </div>
-
-
     <div className={classes.Card} style={{ backgroundImage: `url(${props.item.image})` }}>
 
 
@@ -35,23 +25,38 @@ const layout = (props) => (
 
         </div>
 
-
-
-
-
         <div className={classes.Rating}>
-            <div style={{width:'200px'}}>
+            <div style={{ width: '200px' }}>
                 {props.item.houseType}
             </div>
             &nbsp;&nbsp;
             <Star starCount={props.item.rating.stars} />
+            <span style={{ fontSize: '13px' }}>
+                ({props.item.rating.reviews})
+             </span>
         </div>
 
 
         <div className={classes.LowerRight}>
-            {props.item.houseType}
 
-            <a href="#" className="badge badge-success"><MdAddCircleOutline size={30} /></a>
+
+            <div style={{ width: '25000px' }}>
+                {props.item.location.city}, {props.item.location.city}
+            </div>
+
+            <div style={{ height: '150px', width: '100%', height: '100%', textAlign: 'right' }}>
+                <div style={{ position: 'absolute', bottom: '30px', right: '150px',fontSize: '25px',color:'#f4b642' }}>
+                  {props.item.host.name}
+                </div>
+            </div>
+
+            <div style={{  width: '100%', height: '100%', textAlign: 'right' }}>
+                <div style={{ position: 'absolute', bottom: '10px', right: '15px' }}>
+                    <button type="button" className="btn btn-success" style={{width:'80px',height:'40px'}}><MdAddCircleOutline size={30} /></button>
+                </div>
+            </div>
+
+
         </div>
 
     </div>
