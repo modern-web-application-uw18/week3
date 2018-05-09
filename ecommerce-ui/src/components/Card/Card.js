@@ -1,9 +1,10 @@
 import React from 'react';
 import classes from './Card.css';
+import MdAddCircleOutline from 'react-icons/lib/md/add-circle-outline';
+import Star from '../Star/Star';
 
-import { GridList, GridTile } from 'material-ui/GridList';
-import IconButton from 'material-ui/IconButton';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+
+
 
 const layout = (props) => (
 
@@ -30,7 +31,7 @@ const layout = (props) => (
 
             <div className={classes.AlignRight}>
                 $ {props.item.payment.cost}
-      </div>
+            </div>
 
         </div>
 
@@ -39,12 +40,18 @@ const layout = (props) => (
 
 
         <div className={classes.Rating}>
-            {props.item.houseType}
+            <div style={{width:'200px'}}>
+                {props.item.houseType}
+            </div>
+            &nbsp;&nbsp;
+            <Star starCount={props.item.rating.stars} />
         </div>
 
 
         <div className={classes.LowerRight}>
             {props.item.houseType}
+
+            <a href="#" className="badge badge-success"><MdAddCircleOutline size={30} /></a>
         </div>
 
     </div>
