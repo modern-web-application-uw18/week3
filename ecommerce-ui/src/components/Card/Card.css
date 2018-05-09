@@ -83,6 +83,14 @@
     opacity: 0.90;
 }
 
+.Name {
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+    font-size: 25px;
+    color: #f4b642;
+}
+
 .nopadding {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -95,10 +103,14 @@
         margin: 0px;
     }
 
-    .Title .Rating .UpperRight .LowerLeft {
+    .Title  {
         font-size: 20px;
     }
 
+    .Name {
+        font-size: 20px;
+        right: 120px;
+    }
 
 }
  

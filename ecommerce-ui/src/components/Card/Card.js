@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Card.css';
-import MdAddCircleOutline from 'react-icons/lib/md/add-circle-outline';
+import MdAddShoppingCart from 'react-icons/lib/md/add-shopping-cart';
 import Star from '../Star/Star';
 
 
@@ -45,14 +45,15 @@ const layout = (props) => (
             </div>
 
             <div style={{ height: '150px', width: '100%', height: '100%', textAlign: 'right' }}>
-                <div style={{ position: 'absolute', bottom: '30px', right: '150px',fontSize: '25px',color:'#f4b642' }}>
+                <div className={classes.Name}>
                   {props.item.host.name}
                 </div>
             </div>
 
             <div style={{  width: '100%', height: '100%', textAlign: 'right' }}>
                 <div style={{ position: 'absolute', bottom: '10px', right: '15px' }}>
-                    <button type="button" className="btn btn-success" style={{width:'80px',height:'40px'}}><MdAddCircleOutline size={30} /></button>
+                
+                    <button type="button" className="btn btn-default" style={{width:'45px',height:'40px',backgroundColor:'black',border:'0px'}}><MdAddShoppingCart size={20} style={{color:'#ffffff'}} /></button>
                 </div>
             </div>
 
