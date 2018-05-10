@@ -4,9 +4,12 @@ import ecData from './data-json/ecommerce-data.json';
 class App extends Component {
   render() {
     return (
-		<div id='pagecontainer'>
-	 <h2>Rentals</h2>
-	 <div id='rentalcontainer'> 
+	<div id='pagecontainer'>
+		<h2>Your Selected Rentals</h2>
+			<div id='cartcontainer'>
+			</div>
+		<h2>Available Rentals</h2>
+		<div id='rentalcontainer'> 
 		{ecData.map(function(ecDataMapped){
           return <div class="rentaldiv"><ul><li><h3>{ecDataMapped.title}</h3></li>
 		  <li>Type of listing: {ecDataMapped.houseType}</li>
