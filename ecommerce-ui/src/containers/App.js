@@ -10,16 +10,9 @@ class App extends Component {
       <div>
         <Layout>
 
-
-          {/* <div className='container'>
-            <div className='row'> */}
-
               {mockDataArr.map((item,idx) => {
                 return <Card item={item} key={idx}/>
               })}
-
-            {/* </div>
-          </div> */}
 
         </Layout>
 

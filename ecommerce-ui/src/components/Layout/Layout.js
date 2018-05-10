@@ -1,11 +1,11 @@
 import React from 'react';
-import Cart from '../../components/Cart/Cart'
+import Header from '../../components/Header/Header'
 import classes from './Layout.css';
 
 const layout = (props) => (
     <div className={classes.Layout}>
 
-        <Cart />
+        <Header />
 
         <main className={classes.MainStage}>
             {props.children}
