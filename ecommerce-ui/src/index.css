@@ -1,0 +1,58 @@
+body {
+  margin: 5px;
+  padding: 5px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 h2 h3 h4 p {
+	margin: 5px;
+	padding: 5px;
+}
+
+.rentalimage{
+	width: 100%;
+        }
+
+.authorimage{
+	border-radius: 50%;
+}
+
+#pagecontainer{
+	background-color: #ffffff;
+}
+#rentalcontainer{
+	   width: 100%;
+	   justify-content: space-between;
+	   display: flex;
+}
+#missedcontainer{
+	   width: 100%;
+	   justify-content: space-between;
+	   display: flex;
+}
+.missedarticlediv{
+		float: left;
+		width: 30%;
+		padding: 0px;
+	   border-width: 1px;
+	   border-style: solid;
+	   border-color: #d3d3d3;
+	   overflow: hidden;
+}
+.rentaldiv{
+		float: left; 
+		width: 50%;
+		padding: 0px;
+	   border-width: 1px;
+	   border-style: solid;
+	   border-color: #d3d3d3;
+	   overflow: hidden;
+}
+
+ul{
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
