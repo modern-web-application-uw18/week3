@@ -9,13 +9,12 @@ import Star from '../Star/Star';
 const layout = (props) => (
 
 
+  
     <div className={classes.Card} style={{ backgroundImage: `url(${props.item.image})` }}>
-
 
         <div className={classes.Title}>
             {props.item.title}
         </div>
-
 
         <div className={classes.UpperRight}>
 
@@ -40,22 +39,19 @@ const layout = (props) => (
         <div className={classes.LowerRight}>
 
 
-            <div style={{ width: '25000px' }}>
+             <div>
                 {props.item.location.city}, {props.item.location.city}
             </div>
 
-            <div style={{ height: '150px', width: '100%', height: '100%', textAlign: 'right' }}>
+            <div style={{ textAlign: 'left'}}>
                 <div className={classes.Name}>
                   {props.item.host.name}
                 </div>
             </div>
 
-            <div style={{  width: '100%', height: '100%', textAlign: 'right' }}>
-                <div style={{ position: 'absolute', bottom: '10px', right: '15px' }}>
-                
-                    <button type="button" className="btn btn-default" style={{width:'45px',height:'40px',backgroundColor:'black',border:'0px'}}><MdAddShoppingCart size={20} style={{color:'#ffffff'}} /></button>
-                </div>
-            </div>
+            <div style={{textAlign: 'right' }}>
+                    <button type="button" className="btn btn-default" style={{width:'45px',height:'35px',backgroundColor:'#5b5b5b',border:'0px'}}><MdAddShoppingCart size={20} style={{color:'#ffffff'}} /></button>
+            </div> 
 
 
         </div>

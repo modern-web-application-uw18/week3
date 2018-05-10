@@ -1,16 +1,21 @@
 .Layout{
-    /* width: 100%; */
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     /* margin: auto; */
     /* height: 100%; */
     /* text-align: center; */
     /* background-color: rgb(245, 245, 245);
 } */
 
-/* @media (min-width: 650px) {
-    .Layout {
-        width: 80%;
-        height: 100%;
-    }
-} */
+
 
 }
+
+.MainStage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;   
+}
+
