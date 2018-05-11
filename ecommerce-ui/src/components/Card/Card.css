@@ -5,8 +5,8 @@
     display: grid;
     justify-content: center;
     margin: 5px;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: 50%;
+    grid-template-columns: 49% 50%;
+    grid-auto-rows: 49%;
     grid-gap: 5px;
     background-position: 50% 50% !important;
     background-size: cover!important;
@@ -100,11 +100,14 @@
     padding-right: 0 !important;
  }
 
+.Type { 
+    font-size: 13px;
+}
 
-@media (max-width: 650px) {
+@media (max-width: 668px) {
     .Card {
         width: 100%;
-        margin: 0px;
+        margin: 2px;
     }
 
     .Title  {
@@ -116,5 +119,12 @@
         right: 120px;
     }
 
+    .Rating {
+        font-size: 13px;
+    }
+
+    .Type {
+        font-size: 10px;
+    }
 }
  

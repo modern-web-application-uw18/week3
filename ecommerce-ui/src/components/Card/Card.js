@@ -29,7 +29,7 @@ const layout = (props) => (
             </div>
             &nbsp;&nbsp;
             <Star starCount={props.item.rating.stars} />
-            <span style={{ fontSize: '13px' }}>
+            <span className={classes.Type}>
                 ({props.item.rating.reviews})
              </span>
         </div>
