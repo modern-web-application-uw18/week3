@@ -4,8 +4,8 @@ import MdAddShoppingCart from 'react-icons/lib/md/add-shopping-cart';
 import Star from '../Star/Star';
 
 
-const layout = (props) => (
-  
+const card = (props) => (
+
     <div className={classes.Card} style={{ backgroundImage: `url(${props.item.image})` }}>
 
         {/* Title */}
@@ -29,7 +29,7 @@ const layout = (props) => (
             </div>
             &nbsp;&nbsp;
             <Star starCount={props.item.rating.stars} />
-            <span style={{ fontSize: '13px' }}>
+            <span className={classes.Type}>
                 ({props.item.rating.reviews})
              </span>
         </div>
@@ -37,17 +37,22 @@ const layout = (props) => (
 
         {/* Lower Right */}
         <div className={classes.LowerRight}>
-             <div>
-                {props.item.location.city}, {props.item.location.city}
+            <div>
+                {props.item.location.city}, {props.item.location.country}
             </div>
-            <div style={{ textAlign: 'left'}}>
+            <div style={{ textAlign: 'left' }}>
                 <div className={classes.Name}>
-                  {props.item.host.name}
+                    {props.item.host.name}
                 </div>
             </div>
-            <div style={{textAlign: 'right' }}>
-                    <button type="button" className="btn btn-default" style={{width:'45px',height:'35px',backgroundColor:'#5b5b5b',border:'0px'}}><MdAddShoppingCart size={20} style={{color:'#ffffff'}} /></button>
-            </div> 
+            <div style={{ textAlign: 'right' }}>
+                <button
+                    type="button"
+                    className="btn btn-default"
+                    style={{ width: '45px', height: '35px', backgroundColor: '#5b5b5b', border: '0px' }}
+                    onClick={()=>props.addListingToTheCartHandler(props.item)}
+                ><MdAddShoppingCart size={20} style={{ color: '#ffffff' }} /></button>
+            </div>
         </div>
 
 
@@ -56,4 +61,4 @@ const layout = (props) => (
 )
 
 
-export default layout;
+export default card;

@@ -1,57 +1,59 @@
 import React from 'react';
 import Modal from 'react-bootstrap/lib/Modal';
 import Button from 'react-bootstrap/lib/Button';
-import OverlayTrigger from 'react-bootstrap/lib/OverlayTrigger';
-import Popover from 'react-bootstrap/lib/Popover';
-import Tooltip from 'react-bootstrap/lib/Tooltip';
+import MdHighlightRemove from 'react-icons/lib/md/highlight-remove';
 
-
-const popover = (
-    <Popover id="modal-popover" title="popover">
-        very popover. such engagement
-          </Popover>
-);
-const tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
 
 
 const cart = (props) => (
+    
 
     <Modal show={props.cartShow} onHide={props.handleCartClose}>
         <Modal.Header closeButton>
             <Modal.Title>Shopping Cart</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <h4>Text in a modal</h4>
-            <p>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </p>
 
-            <h4>Popover in a modal</h4>
-            <p>
-                there is a{' '}
-                <OverlayTrigger overlay={popover}>
-                    <a href="#popover">popover</a>
-                </OverlayTrigger>{' '}
-                here
-          </p>
 
-            <h4>Tooltips in a modal</h4>
-            <p>
-                there is a{' '}
-                <OverlayTrigger overlay={tooltip}>
-                    <a href="#tooltip">tooltip</a>
-                </OverlayTrigger>{' '}
-                here
-          </p>
+   
 
-            <hr />
+            <table className="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Title</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-            <h4>Overflowing text to show scroll behavior</h4>
-            <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                ac consectetur ac, vestibulum at eros.
-          </p>
+
+                    {props.cartContent.map((item, idx) => {
+                        return (
+                        <tr key={idx}>
+                            <td><MdHighlightRemove style={{color:'red'}} onClick={()=>props.removeListingFromTheCartHandler(item)}/></td>
+                            <td>{item.title}</td>
+                            <td>{item.location.city}</td>
+                            <td>{item.location.country}</td>
+                            <td>$ {item.payment.cost}</td>
+                        
+                        </tr>)
+                    })}
+
+                    <tr>
+                        <td/>
+                        <td/>
+                        <td/>
+                        <td><b>Total</b></td>
+                        <td>$ {props.cartContent.reduce((sum,value) => sum+value.payment.cost, 0)}</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
 
         </Modal.Body>
         <Modal.Footer>

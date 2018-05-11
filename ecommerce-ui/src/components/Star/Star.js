@@ -18,7 +18,7 @@ let starArrMaker = (starCount) => {
 const star = (props) => (
         <div className={classes.AlignRight}>
             {starArrMaker(props.starCount).map((item,idx)=>{
-               return item === 'whole' ? <MdStar size={20} key={idx} /> : <MdStarHalf size={20} key={idx} />              
+               return item === 'whole' ? <MdStar className={classes.Star}  key={idx} /> : <MdStarHalf className={classes.Star}  key={idx} />              
              })}
         </div>
     

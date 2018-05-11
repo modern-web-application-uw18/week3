@@ -1,0 +1,49 @@
+import React from 'react';
+import { shallow, mount} from 'enzyme';
+import Card from './Card';
+import Layout from '../../containers/Layout/Layout';
+
+import classes from './Card.css';
+import MdAddShoppingCart from 'react-icons/lib/md/add-shopping-cart';
+import Star from '../Star/Star';
+
+describe('<Card />', () => {
+
+    let mockListing = {
+        "title": "Centrally-located Manhattan studio",
+        "houseType": "Apartment",
+        "image": "https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80",
+        "location": {
+            "city": "New York",
+            "country": "USA"
+        },
+        "payment": {
+            "cost": 105,
+            "description": "Free cancellation"
+        },
+        "host": {
+            "name": "Robert",
+            "isSuperhost": true
+        },
+        "rating": {
+            "stars": 3,
+            "reviews": 133
+        }
+    }
+
+    it('Snapshot test', () => {
+
+        const wrapper2 = mount(<Layout  />);
+        let fn = wrapper2.instance().addListingToTheCartHandler;
+
+        const wrapper = mount(<Card item={mockListing} addListingToTheCartHandler={fn}  />);
+        
+
+        
+        expect(wrapper.find('.btn')).toHaveLength(1);
+        wrapper.find('.btn').simulate('click');
+
+
+        expect(wrapper).toMatchSnapshot();
+    })
+})

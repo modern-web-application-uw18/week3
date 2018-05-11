@@ -5,3 +5,18 @@
     opacity: .5;
 
 }
+
+.Star {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 668px) {
+    .Star {
+        height: 12px;
+        width: 12px;
+        margin-bottom: 2px;
+    }
+
+}
