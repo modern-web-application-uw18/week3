@@ -10,14 +10,14 @@ const layout = (props) => (
 
         {/* Title */}
         <div className={classes.Title}>
-            {props.item.title}
+            {props.item.title || ''}
         </div>
 
 
         {/* $ Cost  */}
         <div className={classes.UpperRight}>
             <div className={classes.AlignRight}>
-                $ {props.item.payment.cost}
+                $ {props.item.payment.cost || ''}
             </div>
         </div>
 
@@ -25,12 +25,12 @@ const layout = (props) => (
         {/* Rating */}
         <div className={classes.Rating}>
             <div style={{ width: '200px' }}>
-                {props.item.houseType}
+                {props.item.houseType || ''}
             </div>
             &nbsp;&nbsp;
-            <Star starCount={props.item.rating.stars} />
+            <Star starCount={props.item.rating.stars || 0} />
             <span className={classes.Type}>
-                ({props.item.rating.reviews})
+                ({props.item.rating.reviews || 0})
              </span>
         </div>
 
@@ -38,11 +38,11 @@ const layout = (props) => (
         {/* Lower Right */}
         <div className={classes.LowerRight}>
              <div>
-                {props.item.location.city}, {props.item.location.city}
+                {props.item.location.city || ''}, {props.item.location.city || ''}
             </div>
             <div style={{ textAlign: 'left'}}>
                 <div className={classes.Name}>
-                  {props.item.host.name}
+                  {props.item.host.name || ''}
                 </div>
             </div>
             <div style={{textAlign: 'right' }}>

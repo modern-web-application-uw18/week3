@@ -9,77 +9,76 @@ import FormControl from 'react-bootstrap/lib/FormControl';
 
 class AddListing extends Component {
 
-     state = {
-        title: '',
-        houseType: '',
-        image: '',
-        location: {
+    constructor(props) {
+        super(props);
+        this.state = {
+            title: '',
+            houseType: '',
+            image: '',
             city: '',
-            country: ''
-        },
-        payment: {
-            cost: ''
-        },
-        host: {
+            country: '',
+            cost: '',
             name: ''
         }
     }
 
-    
+
+
+
+
 
     handleNameChange = (e) => {
         let name = e.target.value;
-           this.setState((prevState, props) => {       
-            return {host:{name: name}};
-          });
+        this.setState((prevState, props) => {
+            return {  name: name  };
+        });
     }
 
     handleCityChange = (e) => {
         let city = e.target.value;
-           this.setState((prevState, props) => {       
-            return {location:{city: city}};
-          });
+        this.setState((prevState, props) => {
+            return { city: city  };
+        });
     }
 
     handleCountryChange = (e) => {
         let country = e.target.value;
-           this.setState((prevState, props) => {       
-            return {location:{country: country}};
-          });
+        this.setState((prevState, props) => {
+            return { country: country };
+        });
     }
 
     handleTitleChange = (e) => {
         let title = e.target.value;
-           this.setState((prevState, props) => {       
-            return {title: title};
-          });
+        this.setState((prevState, props) => {
+            return { title: title };
+        });
     }
 
     handleHouseTypeChange = (e) => {
         let houseType = e.target.value;
-           this.setState((prevState, props) => {       
-            return {houseType: houseType};
-          });
+        this.setState((prevState, props) => {
+            return { houseType: houseType };
+        });
     }
 
     handleImageURLChange = (e) => {
         let image = e.target.value;
-           this.setState((prevState, props) => {       
-            return {image: image};
-          });
+        this.setState((prevState, props) => {
+            return { image: image };
+        });
     }
 
     handleCostChange = (e) => {
         let cost = e.target.value;
-           this.setState((prevState, props) => {       
-            return {payment:{cost: cost}};
-          });
+        this.setState((prevState, props) => {
+            return { cost: cost  };
+        });
     }
 
 
     submitForm = () => {
-        console.log("click");
-        console.log(this.state);
+        this.props.dataHandler(this.state);
     }
 
     render() {
@@ -118,7 +117,7 @@ class AddListing extends Component {
                         <FormGroup controlId="formTitle">
                             <Col sm={3}>Title</Col>
                             <Col sm={9}>
-                                <FormControl type="text" value={this.state.Title} onChange={this.handleTitleChange} placeholder="Title" />
+                                <FormControl type="text" value={this.state.title} onChange={this.handleTitleChange} placeholder="Title" />
                             </Col>
                         </FormGroup>
 
@@ -160,7 +159,7 @@ class AddListing extends Component {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.handleFormClose}>Close</Button>
-            
+
                 </Modal.Footer>
             </Modal>
         )

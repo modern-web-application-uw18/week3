@@ -3,9 +3,6 @@ import classes from './Header.css';
 import Cart from './Cart/Cart';
 import AddListing from './AddListing/AddListing';
 
-
-
-
 import MdShoppingCart from 'react-icons/lib/md/shopping-cart';
 import MdAddBox from 'react-icons/lib/md/add-box';
 
@@ -63,7 +60,8 @@ class Header extends Component {
 
 
         <Cart cartShow={this.state.cartShow}  handleCartClose={this.handleCartClose}/>
-        <AddListing formShow={this.state.formShow} handleFormClose={this.handleFormClose}/>
+
+        <AddListing formShow={this.state.formShow} handleFormClose={this.handleFormClose} dataHandler={this.props.dataHandler}/>
 
 
       </div>
