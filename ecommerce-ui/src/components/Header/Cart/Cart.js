@@ -33,7 +33,7 @@ const cart = (props) => (
                     {props.cartContent.map((item, idx) => {
                         return (
                         <tr key={idx}>
-                            <td><MdHighlightRemove style={{color:'red'}} onClick={()=>props.removeListingFromTheCartHandler(item)}/></td>
+                            <td><MdHighlightRemove id={item.title} style={{color:'red'}} onClick={()=>props.removeListingFromTheCartHandler(item)}/></td>
                             <td>{item.title}</td>
                             <td>{item.location.city}</td>
                             <td>{item.location.country}</td>
