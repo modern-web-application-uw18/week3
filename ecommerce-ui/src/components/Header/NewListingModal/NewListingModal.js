@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/lib/Form';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import Col from 'react-bootstrap/lib/Col';
 import FormControl from 'react-bootstrap/lib/FormControl';
+import PropTypes from 'prop-types';
 
 
 class NewListingModal extends Component {
@@ -177,13 +178,13 @@ class NewListingModal extends Component {
                         <FormGroup controlId="formCost">
                             <Col sm={3}>Cost</Col>
                             <Col sm={9}>
-                                <FormControl type="text" value={this.state.cost} onChange={this.handleCostChange} placeholder="Cost" />
+                                <FormControl type="number" value={this.state.cost} onChange={this.handleCostChange} placeholder="Cost" />
                             </Col>
                         </FormGroup>
 
                         <FormGroup>
                             <Col smOffset={3} sm={9}>
-                                <Button onClick={this.submitForm}>Submit New Listing</Button>
+                                <Button className="submitBtn" onClick={this.submitForm}>Submit New Listing</Button>
                             </Col>
                         </FormGroup>
 
@@ -200,6 +201,14 @@ class NewListingModal extends Component {
     }
 
 
+}
+
+
+NewListingModal.propTypes = {
+    formShow: PropTypes.bool.isRequired,
+    handleFormClose: PropTypes.func.isRequired,
+    dataHandler: PropTypes.func.isRequired,
+    mockDataArr: PropTypes.array.isRequired
 }
 
 export default NewListingModal;

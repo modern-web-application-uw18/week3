@@ -2,7 +2,7 @@
 
 exports[`<Star /> Should have three MdStar elements 1`] = `
 <star
-  starCount="3"
+  starCount={3}
 >
   <div>
     <MdStar

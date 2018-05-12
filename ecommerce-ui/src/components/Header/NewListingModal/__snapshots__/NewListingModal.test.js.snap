@@ -1,62 +1,288 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NewListingModal /> Snapshot test 1`] = `
-<NewListingModal
-  handleFormClose={[Function]}
->
-  <Modal
-    animation={true}
-    autoFocus={true}
-    backdrop={true}
-    bsClass="modal"
-    dialogComponentClass={[Function]}
-    enforceFocus={true}
-    keyboard={true}
-    manager={
-      ModalManager {
-        "add": [Function],
-        "containers": Array [],
-        "data": Array [],
-        "handleContainerOverflow": true,
-        "hideSiblingNodes": true,
-        "isTopModal": [Function],
-        "modals": Array [],
-        "remove": [Function],
-      }
+<Modal
+  animation={true}
+  autoFocus={true}
+  backdrop={true}
+  bsClass="modal"
+  dialogComponentClass={[Function]}
+  enforceFocus={true}
+  keyboard={true}
+  manager={
+    ModalManager {
+      "add": [Function],
+      "containers": Array [],
+      "data": Array [],
+      "handleContainerOverflow": true,
+      "hideSiblingNodes": true,
+      "isTopModal": [Function],
+      "modals": Array [],
+      "remove": [Function],
     }
-    onHide={[Function]}
-    renderBackdrop={[Function]}
-    restoreFocus={true}
-    show={false}
+  }
+  onHide={[Function]}
+  renderBackdrop={[Function]}
+  restoreFocus={true}
+  show={true}
+>
+  <ModalHeader
+    bsClass="modal-header"
+    closeButton={true}
+    closeLabel="Close"
   >
-    <Modal
-      autoFocus={true}
-      backdrop={true}
-      backdropClassName="modal-backdrop"
-      backdropTransition={[Function]}
-      containerClassName="modal-open"
-      enforceFocus={true}
-      keyboard={true}
-      manager={
-        ModalManager {
-          "add": [Function],
-          "containers": Array [],
-          "data": Array [],
-          "handleContainerOverflow": true,
-          "hideSiblingNodes": true,
-          "isTopModal": [Function],
-          "modals": Array [],
-          "remove": [Function],
-        }
-      }
-      onEntering={[Function]}
-      onExited={[Function]}
-      onHide={[Function]}
-      renderBackdrop={[Function]}
-      restoreFocus={true}
-      show={false}
-      transition={[Function]}
-    />
-  </Modal>
-</NewListingModal>
+    <ModalTitle
+      bsClass="modal-title"
+      componentClass="h4"
+    >
+      Add a New Listing
+    </ModalTitle>
+  </ModalHeader>
+  <ModalBody
+    bsClass="modal-body"
+    componentClass="div"
+  >
+    <Form
+      bsClass="form"
+      componentClass="form"
+      horizontal={true}
+      inline={false}
+    >
+      <FormGroup
+        bsClass="form-group"
+        controlId="formTitle"
+        validationState="error"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          Title
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="input"
+            onChange={[Function]}
+            placeholder="Title"
+            type="text"
+            value=""
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+        controlId="formName"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          Name
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="input"
+            onChange={[Function]}
+            placeholder="Name"
+            type="text"
+            value=""
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+        controlId="formCity"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          City
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="input"
+            onChange={[Function]}
+            placeholder="City"
+            type="text"
+            value=""
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+        controlId="formCountry"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          Country
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="input"
+            onChange={[Function]}
+            placeholder="Country"
+            type="text"
+            value=""
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+        controlId="formHouseType"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          House Type
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="select"
+            onChange={[Function]}
+            placeholder="Select"
+            value=""
+          >
+            <option
+              value=""
+            >
+              ...
+            </option>
+            <option
+              value="Apartment"
+            >
+              Apartment
+            </option>
+            <option
+              value="Entire House"
+            >
+              Entire House
+            </option>
+          </FormControl>
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+        controlId="formImage"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          Image URL
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="input"
+            onChange={[Function]}
+            placeholder="Image URL"
+            type="text"
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+        controlId="formCost"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={3}
+        >
+          Cost
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+        >
+          <FormControl
+            bsClass="form-control"
+            componentClass="input"
+            onChange={[Function]}
+            placeholder="Cost"
+            type="number"
+            value=""
+          />
+        </Col>
+      </FormGroup>
+      <FormGroup
+        bsClass="form-group"
+      >
+        <Col
+          bsClass="col"
+          componentClass="div"
+          sm={9}
+          smOffset={3}
+        >
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            className="submitBtn"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Submit New Listing
+          </Button>
+        </Col>
+      </FormGroup>
+    </Form>
+  </ModalBody>
+  <ModalFooter
+    bsClass="modal-footer"
+    componentClass="div"
+  >
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Close
+    </Button>
+  </ModalFooter>
+</Modal>
 `;

@@ -3,6 +3,8 @@ import classes from './Header.css';
 import Cart from './Cart/Cart';
 import NewListingModal from './NewListingModal/NewListingModal';
 
+import PropTypes from 'prop-types';
+
 import MdShoppingCart from 'react-icons/lib/md/shopping-cart';
 import MdAddBox from 'react-icons/lib/md/add-box';
 
@@ -54,6 +56,16 @@ class Header extends Component {
       </div>
     )
   }
+}
+
+
+Header.propTypes = {
+  dataHandler: PropTypes.func.isRequired,
+  cartContent: PropTypes.array.isRequired,
+  removeListingFromTheCartHandler: PropTypes.func.isRequired,
+  mockDataArr: PropTypes.array.isRequired
+
+
 }
 
 

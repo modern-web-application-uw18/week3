@@ -7,7 +7,7 @@ import MdStarHalf from 'react-icons/lib/md/star-half';
 
 describe('<Star />', () => {
     it('Should have three MdStar elements', () => {
-        const wrapper = mount(<Star starCount='3' />);
+        const wrapper = mount(<Star starCount={3} />);
         expect(wrapper.find(MdStar)).toHaveLength(3);
         expect(wrapper).toMatchSnapshot();
 

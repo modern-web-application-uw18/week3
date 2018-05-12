@@ -47,7 +47,7 @@ class Layout extends Component {
                     country: data.country ? data.countr : "Country"
                 },
                 payment: {
-                    cost: data.cost ? parseInt(data.cost) : 0, //making sure this is an integer to avoid issues when calculating total
+                    cost: data.cost ? parseInt(data.cost,10) : 0, //making sure this is an integer to avoid issues when calculating total
                 },
                 host: {
                     name: data.name ? data.name : 'Host',

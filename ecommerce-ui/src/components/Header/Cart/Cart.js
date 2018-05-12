@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from 'react-bootstrap/lib/Modal';
 import Button from 'react-bootstrap/lib/Button';
 import MdHighlightRemove from 'react-icons/lib/md/highlight-remove';
+import PropTypes from 'prop-types';
 
 
 
@@ -33,7 +34,7 @@ const cart = (props) => (
                     {props.cartContent.map((item, idx) => {
                         return (
                         <tr key={idx}>
-                            <td><MdHighlightRemove id={item.title} style={{color:'red'}} onClick={()=>props.removeListingFromTheCartHandler(item)}/></td>
+                            <td><MdHighlightRemove style={{color:'red'}} onClick={()=>props.removeListingFromTheCartHandler(item)}/></td>
                             <td>{item.title}</td>
                             <td>{item.location.city}</td>
                             <td>{item.location.country}</td>
@@ -61,5 +62,14 @@ const cart = (props) => (
         </Modal.Footer>
     </Modal>
 )
+
+
+cart.propTypes = {
+    cartShow: PropTypes.bool.isRequired,
+    handleCartClose: PropTypes.func.isRequired,
+    cartContent: PropTypes.array.isRequired,
+    removeListingFromTheCartHandler: PropTypes.func.isRequired
+}
+
 
 export default cart;

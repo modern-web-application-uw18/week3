@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount} from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Header from './Header';
 import classes from './Header.css';
 import Cart from './Cart/Cart';
@@ -13,7 +13,15 @@ describe('<Header />', () => {
 
 
     it('Snapshot test', () => {
-        const wrapper = mount(<Header mockDataArr={mockListings} cartContent={[mockListings[0]]}/>);
+        const wrapper = shallow(
+            <Header
+                mockDataArr={mockListings}
+                cartContent={[mockListings[0]]}
+                dataHandler={()=>null}
+                removeListingFromTheCartHandler={()=>null}
+               
+                 />
+        );
 
         wrapper.instance().handleCartClose();
         wrapper.instance().handleCartShow();
@@ -21,6 +29,6 @@ describe('<Header />', () => {
         wrapper.instance().handleFormShow();
 
 
-        //expect(wrapper).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
     })
 })

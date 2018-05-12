@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Card.css';
 import MdAddShoppingCart from 'react-icons/lib/md/add-shopping-cart';
 import Star from '../Star/Star';
+import PropTypes from 'prop-types';
 
 
 const card = (props) => (
@@ -59,6 +60,11 @@ const card = (props) => (
     </div>  //main div
 
 )
+
+card.propTypes = {
+    item: PropTypes.object.isRequired,
+    addListingToTheCartHandler: PropTypes.func.isRequired
+}
 
 
 export default card;
