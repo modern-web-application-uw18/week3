@@ -1,0 +1,130 @@
+.Card {
+    height: 200px;
+    width: 500px;
+    /* min-width: 40%; */
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+    grid-template-columns: 49% 50%;
+    grid-auto-rows: 49%;
+    grid-gap: 5px;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: left;
+    padding: 5px;
+    /* position: relative;
+    flex-wrap: wrap; */
+    border: solid 1px #cecece;
+
+}
+
+
+.Title {
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+    display: inline-flex;    
+    opacity: 0.90;
+}
+
+
+.Rating {
+    background-color: #be2c00;
+    color: rgb(231, 231, 231);
+    width: 100%;
+    height: 33%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    display: inline-flex;    
+    opacity: 0.90;
+}
+
+
+.UpperRight {
+    background-color: #ffffff; 
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /* font-style: italic; */
+    font-size: 45px;
+    display: inline-flex; 
+    /* margin-left: 5px;    */
+    opacity: 0.750;
+}
+
+.AlignRight {
+    text-align: center; 
+    width: 100%;
+    color: #007e15;
+    opacity: 1;
+
+}
+
+.LowerRight {
+    background-color: #1b1a1a;
+    color: rgb(231, 231, 231);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    /* display: inline-flex;  */
+    /* margin-left: 5px;    */
+    opacity: 0.90;
+}
+
+.Name {
+    /* position: absolute; */
+    bottom: 30px;
+    right: 150px;
+    font-size: 20px;
+    color: #f4b642;
+}
+
+.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+ }
+
+.Type { 
+    font-size: 13px;
+}
+
+@media (max-width: 668px) {
+    .Card {
+        width: 100%;
+        margin: 2px;
+    }
+
+    .Title  {
+        font-size: 20px;
+    }
+
+    .Name {
+        font-size: 20px;
+        right: 120px;
+    }
+
+    .Rating {
+        font-size: 13px;
+    }
+
+    .Type {
+        font-size: 10px;
+    }
+}
+ 

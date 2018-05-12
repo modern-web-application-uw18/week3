@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cart /> Snapshot test 1`] = `
+<Modal
+  animation={true}
+  autoFocus={true}
+  backdrop={true}
+  bsClass="modal"
+  dialogComponentClass={[Function]}
+  enforceFocus={true}
+  keyboard={true}
+  manager={
+    ModalManager {
+      "add": [Function],
+      "containers": Array [],
+      "data": Array [],
+      "handleContainerOverflow": true,
+      "hideSiblingNodes": true,
+      "isTopModal": [Function],
+      "modals": Array [],
+      "remove": [Function],
+    }
+  }
+  onHide={[Function]}
+  renderBackdrop={[Function]}
+  restoreFocus={true}
+  show={true}
+>
+  <ModalHeader
+    bsClass="modal-header"
+    closeButton={true}
+    closeLabel="Close"
+  >
+    <ModalTitle
+      bsClass="modal-title"
+      componentClass="h4"
+    >
+      Shopping Cart
+    </ModalTitle>
+  </ModalHeader>
+  <ModalBody
+    bsClass="modal-body"
+    componentClass="div"
+  >
+    <table
+      className="table table-hover"
+    >
+      <thead>
+        <tr>
+          <th />
+          <th
+            scope="col"
+          >
+            Title
+          </th>
+          <th
+            scope="col"
+          >
+            City
+          </th>
+          <th
+            scope="col"
+          >
+            Country
+          </th>
+          <th
+            scope="col"
+          >
+            Cost
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          key="0"
+        >
+          <td>
+            <MdHighlightRemove
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "red",
+                }
+              }
+            />
+          </td>
+          <td>
+            Centrally-located Manhattan studio
+          </td>
+          <td>
+            New York
+          </td>
+          <td>
+            USA
+          </td>
+          <td>
+            $ 
+            105
+          </td>
+        </tr>
+        <tr
+          key="1"
+        >
+          <td>
+            <MdHighlightRemove
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "red",
+                }
+              }
+            />
+          </td>
+          <td>
+            Denver apartment outside Union Station
+          </td>
+          <td>
+            Denver
+          </td>
+          <td>
+            USA
+          </td>
+          <td>
+            $ 
+            130
+          </td>
+        </tr>
+        <tr
+          key="2"
+        >
+          <td>
+            <MdHighlightRemove
+              onClick={[Function]}
+              style={
+                Object {
+                  "color": "red",
+                }
+              }
+            />
+          </td>
+          <td>
+            Quaint 3-bedroom home in Gamla stan
+          </td>
+          <td>
+            Stockholm
+          </td>
+          <td>
+            Sweden
+          </td>
+          <td>
+            $ 
+            230
+          </td>
+        </tr>
+        <tr>
+          <td />
+          <td />
+          <td />
+          <td>
+            <b>
+              Total
+            </b>
+          </td>
+          <td>
+            $ 
+            465
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </ModalBody>
+  <ModalFooter
+    bsClass="modal-footer"
+    componentClass="div"
+  >
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Close
+    </Button>
+  </ModalFooter>
+</Modal>
+`;

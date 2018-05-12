@@ -1,0 +1,21 @@
+.Layout{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* margin: auto; */
+    /* height: 100%; */
+    /* text-align: center; */
+    /* background-color: rgb(245, 245, 245);
+} */
+
+
+
+}
+
+.MainStage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;   
+}
+
