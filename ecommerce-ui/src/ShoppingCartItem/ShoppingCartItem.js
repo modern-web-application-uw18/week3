@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import '../ShoppingCart/ShoppingCart.css';
 
 class ShoppingCartItem extends Component {
+  
   
   render() {
     return (
@@ -10,13 +12,19 @@ class ShoppingCartItem extends Component {
             <div className="minicart-details-name">{this.props.title}
             </div>
             <div className="minicart-details-remove">
-                <button className="minicart-remove">×</button>
+                <button onClick={this.props.removeFromCart} className="minicart-remove">×</button>
             </div>
             <div className="minicart-details-price"> <span className="minicart-price">${this.props.cost}</span> </div>
         </li>
       </ul>
     );
   }
+}
+
+ShoppingCartItem.propTypes = {
+  title: PropTypes.string,
+  cost: PropTypes.number,
+  removeFromCart: PropTypes.func
 }
 
 export default ShoppingCartItem;

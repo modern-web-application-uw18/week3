@@ -5,14 +5,6 @@ import './Product.css';
 class Product extends Component {
   
 
-addProduct = (event) => {
-  const id = event.target.value;
-  
-  // TODO: How do I call addProduct on the ProductList component?
-  // productList.addProduct(id);
-}
-
-
   render() {
     
     return (
@@ -21,7 +13,7 @@ addProduct = (event) => {
         <img src={this.props.image} alt="" />
         <h2>{this.props.title}</h2>
         <p>${this.props.cost}</p>
-        <button value={this.props.id} onClick={this.addProduct} className="btn btn-secondary">Add to cart</button>
+        <button value={this.props.id} onClick={this.props.addToCart} className="btn btn-secondary">Add to cart</button>
         
       </div> 
          
@@ -32,7 +24,9 @@ addProduct = (event) => {
 Product.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
-  cost: PropTypes.number
+  cost: PropTypes.number,
+  addToCart: PropTypes.func
+
 };
 
 export default Product;
