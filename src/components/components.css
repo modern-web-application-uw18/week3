@@ -1,0 +1,36 @@
+  .rent-btn {
+    color: #fff;
+    background-color: forestgreen;
+    border-color: forestgreen;
+  }
+  
+  .rent-btn:hover {
+    color: #fff;
+    background-color:orangered;
+    border-color: orangered;
+  }
+  
+  .all-rentals {
+    border:1px solid black;
+  }
+
+  .each-rental {
+    border: 1px solid black;
+    padding:1em;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+    color: darkblue;
+  }
+
+  img {
+    max-width: 300px;
+  }
+  
+
+  
