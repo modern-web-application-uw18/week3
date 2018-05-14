@@ -33,18 +33,19 @@ addToCart = (id) => {
   }
 
 removeFromCart = (index) => {  
-  return (event) => {
+  return (event) => { 
     console.log("the index is: ", index);
     this.setState((prevState, props) => {
       let newArray = this.removeByIndex(prevState.productsInCart, index);
-    console.log(JSON.stringify(newArray));
+      console.log(JSON.stringify(newArray));
       return { productsInCart: newArray };
-    });
+    });    
+    event.preventDefault();
   }
 } 
 
 removeByIndex(array, index) {
-  return array.filter(function (el, i) {
+  return array.filter(function (el, i) {    
     return index !== i;
   });
 }
