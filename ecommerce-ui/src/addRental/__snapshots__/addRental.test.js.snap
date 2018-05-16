@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddRental Shoudl render a component with rental info and an add to cart button 1`] = `
+<div
+  className="flex-item"
+>
+  <img
+    alt=""
+    height="164px"
+    src={undefined}
+    width="246px"
+  />
+  <p />
+  <p />
+  <p>
+    , 
+  </p>
+  <p>
+    $
+     
+  </p>
+  <p>
+    Stars: 
+     Number of Reviews: 
+  </p>
+  <p>
+    Host: 
+     
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Add Rental
+  </button>
+</div>
+`;

@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddRental Shoudl render a component with rental info and an add to cart button 1`] = `
+<div>
+  <h3>
+    Cart
+  </h3>
+  <div>
+    <strong>
+      Total: $
+      0
+    </strong>
+  </div>
+  <div
+    className="flex-container"
+  />
+  <h3>
+    Pick your destination!
+  </h3>
+  <div
+    className="flex-container"
+  >
+    <div
+      className="flex-item"
+    >
+      <img
+        alt=""
+        height="164px"
+        src="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+        width="246px"
+      />
+      <p>
+        Apartment
+      </p>
+      <p>
+        Centrally-located Manhattan studio
+      </p>
+      <p>
+        New York
+        , 
+        USA
+      </p>
+      <p>
+        $
+        105
+         
+        Free cancellation
+      </p>
+      <p>
+        Stars: 
+        3
+         Number of Reviews: 
+        133
+      </p>
+      <p>
+        Host: 
+        Robert
+         
+      </p>
+      <button
+        onClick={[Function]}
+      >
+        Add Rental
+      </button>
+    </div>
+    <div
+      className="flex-item"
+    >
+      <img
+        alt=""
+        height="164px"
+        src="https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80"
+        width="246px"
+      />
+      <p>
+        Apartment
+      </p>
+      <p>
+        Denver apartment outside Union Station
+      </p>
+      <p>
+        Denver
+        , 
+        USA
+      </p>
+      <p>
+        $
+        130
+         
+        
+      </p>
+      <p>
+        Stars: 
+        4.5
+         Number of Reviews: 
+        381
+      </p>
+      <p>
+        Host: 
+        Jamie
+         
+      </p>
+      <button
+        onClick={[Function]}
+      >
+        Add Rental
+      </button>
+    </div>
+    <div
+      className="flex-item"
+    >
+      <img
+        alt=""
+        height="164px"
+        src="https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80"
+        width="246px"
+      />
+      <p>
+        Entire House
+      </p>
+      <p>
+        Quaint 3-bedroom home in Gamla stan
+      </p>
+      <p>
+        Stockholm
+        , 
+        Sweden
+      </p>
+      <p>
+        $
+        230
+         
+        Free cancellation
+      </p>
+      <p>
+        Stars: 
+        5
+         Number of Reviews: 
+        83
+      </p>
+      <p>
+        Host: 
+        Olivia
+         
+      </p>
+      <button
+        onClick={[Function]}
+      >
+        Add Rental
+      </button>
+    </div>
+  </div>
+</div>
+`;
