@@ -54,7 +54,7 @@ removeByIndex(array, index) {
 
   render() {
     return (
-        <div className="bobo">
+        <div className="rental-page">
           <ShoppingCart selectedRentals={this.state.selectedRentals} removeRental={this.removeRental} getCartTotal={this.getCartTotal} />
           <AirBnbList allBnbs={this.state.allBnbs} addRental={this.addRental} />
         </div> 

@@ -10,7 +10,7 @@ class ShoppingCart extends Component {
     return (
         <form>
           <div className="cart-all">      
-          <h2>Properties Rented:</h2>
+          <h1>Properties Rented:</h1>
            {this.props.selectedRentals.map((airbnb, index) =>
             <ShoppingCartItem 
             removeRental={this.props.removeRental(index)} 
