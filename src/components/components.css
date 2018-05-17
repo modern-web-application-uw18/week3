@@ -10,15 +10,42 @@
     border-color: orangered;
   }
   
-  .all-rentals {
-    border:1px solid black;
+  .remove-btn {
+    color: #fff;
+    background-color: darkred;
+    border-color: darkred;
+  }
+  
+  .remove-btn:hover {
+    color: #fff;
+    background-color: orangered;
+    border-color: orangered;
   }
 
   .each-rental {
-    border: 1px solid black;
+    border: 1px solid grey;
     padding:1em;
+    border-bottom-style: none;
   }
 
+  .rental-rating {
+    max-width: 100px;
+  }
+
+  .cart-total {
+    border: 1px solid grey;
+    padding:1em;
+    border-bottom-style: none;
+    display:inline-block;
+    background-color: lightgrey;
+    font-size: 16px;
+  }
+ 
+  .added-rentals {
+    list-style-type: none;
+  }
+
+  
   h2 {
     font-size: 15px;
   }
