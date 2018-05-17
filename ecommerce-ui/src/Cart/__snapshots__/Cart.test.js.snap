@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart should render a minimal Cart section of store front 1`] = `
+<div
+  className="Cart"
+>
+  Your Cart Is Empty :(
+  <p />
+  <strong>
+    Total: $
+    0
+  </strong>
+</div>
+`;
