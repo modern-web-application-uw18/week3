@@ -1,0 +1,31 @@
+._uutxinj {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    text-align: center;
+    background: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(220, 224, 224);
+    border-radius: 4px;
+}
+
+img {
+  max-width: 33%;
+  border-radius: 25px;  
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(72, 72, 72);
+    font-weight: 700;
+    margin: 0px;
+}
