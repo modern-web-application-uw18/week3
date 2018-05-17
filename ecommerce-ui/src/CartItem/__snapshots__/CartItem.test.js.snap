@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem should render a minimal CartItem section of Cart 1`] = `
+<div
+  className="CartItem"
+>
+  <img
+    alt="house to rent"
+    className="CartItemImage"
+    src="./itsABox.jpg"
+  />
+  <p
+    className="FlexGrow1"
+  />
+  <p
+    className="FlexGrow2"
+  >
+    Cardboard Box
+  </p>
+  <p
+    className="FlexGrow1"
+  />
+  <p
+    className="FlexGrow1"
+  >
+    Cost: $
+    1
+  </p>
+  <button
+    className="PurchaseButton"
+    onClick={[Function]}
+  >
+    Remove from Cart
+  </button>
+</div>
+`;

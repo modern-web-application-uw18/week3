@@ -1,0 +1,59 @@
+.Store {
+    text-align: left;
+    margin: 10px;
+}
+
+.Cart {
+    display: flex;
+    flex-direction: column;
+    border: black 1px;
+    border-style: solid;
+    padding: 10px;
+    width: 77%;
+}
+
+.CartItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: grey solid 1px;
+    margin-bottom: 3px;
+}
+
+.Catalogue {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Unit {
+    border: black 1px;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.PurchaseSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CartItemImage {
+    height: 50px;
+    flex-grow: 1;
+}
+
+.FlexGrow1 {
+    flex-grow: 1;
+}
+
+.FlexGrow2 {
+    flex-grow: 2;
+}
+
+.PurchaseButton {
+    width: 100px;
+}

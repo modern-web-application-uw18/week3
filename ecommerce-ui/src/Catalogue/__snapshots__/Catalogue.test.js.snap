@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Catalogue should render a minimal catalogue section of store front 1`] = `
+<div
+  className="Catalogue"
+>
+   
+  <div
+    className="Unit"
+  >
+    <div>
+      <p>
+        Cardboard Box
+      </p>
+      <img
+        alt="a house you can rent"
+        src="./itsABox.jpg"
+      />
+      <p>
+        Location: 
+        Seattle
+        , 
+        USA
+      </p>
+      <div
+        className="PurchaseSection"
+      >
+        <p>
+          Cost: $
+          1
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+   
+</div>
+`;

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store should render a minimal store front 1`] = `
+<div
+  className="Store"
+>
+  <div>
+    <p>
+      Your Cart
+    </p>
+    <div
+      className="Cart"
+    >
+      Your Cart Is Empty :(
+      <p />
+      <strong>
+        Total: $
+        0
+      </strong>
+    </div>
+  </div>
+  <div>
+    <p>
+      Available To Book:
+    </p>
+    <div
+      className="Catalogue"
+    >
+       
+      <div
+        className="Unit"
+      >
+        <div>
+          <p>
+            Cardboard Box
+          </p>
+          <img
+            alt="a house you can rent"
+            src="./itsABox.jpg"
+          />
+          <p>
+            Location: 
+            Seattle
+            , 
+            USA
+          </p>
+          <div
+            className="PurchaseSection"
+          >
+            <p>
+              Cost: $
+              1
+            </p>
+            <button
+              onClick={[Function]}
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</div>
+`;

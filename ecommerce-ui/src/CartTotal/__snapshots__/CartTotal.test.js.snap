@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartTotal should render a minimal CartTotal section of Cart 1`] = `
+<strong>
+  Total: $
+  1
+</strong>
+`;
