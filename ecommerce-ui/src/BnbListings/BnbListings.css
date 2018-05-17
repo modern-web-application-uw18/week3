@@ -1,0 +1,152 @@
+.bnb-listing {
+  padding-bottom: .8rem;
+  border-bottom: .5px solid rgb(68, 58, 45);
+  margin-bottom: 2rem;
+}
+
+.bnb-listing .media {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bnb-listing .more-info {
+  display: none;
+}
+
+.bnb-listing .media .more-info--text {
+  color: white;
+  font-size: .8rem
+}
+
+.bnb-listing .media .more-info--icon {
+  height: 18px;
+}
+
+.bnb-listing .media .more-info:hover,
+.bnb-listing .media:hover .more-info {
+  display: block;
+  position: absolute;
+  margin-top: -2rem;
+  background-color: rgb(68, 58, 45);
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 2rem;
+  padding: .3rem .6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bnb-listing .content {
+  padding-top: .8rem;
+}
+
+.bnb-details h1,
+.bnb-listing h1 {
+  font-family: 'Slabo 27px', serif;
+  margin: .5rem 0 .5rem 0;
+  color: rgb(68, 58, 45);
+}
+
+.bnb-listing h1 {
+  font-size: 1.5rem;
+}
+
+.bnb-details h1 {
+  font-size: 2rem;
+  max-width: 20rem;
+}
+
+.bnb-details h2,
+.bnb-listing h2 {
+  margin-left: .1rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+  color: rgb(130, 110, 85);
+}
+
+.bnb-listing .rating-data > div,
+.bnb-details p,
+.bnb-listing p {
+  font-size: .8rem;
+  margin-left: .1rem;
+}
+
+.bnb-details .price,
+.bnb-listing .price {
+  font-weight: bold;
+  color: rgb(68, 58, 45);
+}
+
+.bnb-details .bnb-stats,
+.bnb-listing .bnb-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: .5rem;
+  justify-content: space-between;
+}
+
+.bnb-details .host-info,
+.bnb-listing .host-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.bnb-details .host-info a,
+.bnb-listing .host-info a {
+  text-decoration: none;
+  color: rgb(130, 110, 85);
+  font-weight: bold;
+  font-size: .7rem;
+}
+
+.bnb-details .host-info a:hover,
+.bnb-listing .host-info a:hover {
+  text-decoration: underline;
+}
+
+.bnb-details .host-icon,
+.bnb-listing .host-icon {
+  margin-right: .3rem;
+}
+
+.bnb-details .host-info svg,
+.bnb-listing .host-icon svg {
+  color: rgb(130, 110, 85);
+}
+
+@media screen and (max-width: 640px) {
+  .bnb-listing {
+    width: 100%;
+  }
+  .bnb-listing .media {
+    min-height: 10rem;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .bnb-listing {
+    width: 49%;
+  }
+  .bnb-listing .media {
+    height: 11rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bnb-listing {
+    width: 32%;
+  }
+}
+
+/*@media screen and (min-width: 1024px {
+  .bnb-listing {
+    width: 32%;
+  }
+}*/

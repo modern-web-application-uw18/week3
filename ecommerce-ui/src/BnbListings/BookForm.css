@@ -1,0 +1,25 @@
+.book-form {
+  width: 100%;
+  border: .5px solid rgba(0,0,0,.4);
+  padding: .8rem;
+}
+
+.book-form label > span {
+  display: block;
+  color: rgb(130, 110, 85);
+  margin-bottom: .5rem;
+}
+
+.book-form label input {
+  margin-bottom: .8rem;
+}
+
+.book-form input[type="submit"] {
+  background-color: rgb(130, 110, 85);
+  color: white;
+  border: none;
+  display: block;
+  font-size: 1rem;
+  padding: .3rem .5rem;
+  font-family: 'Slabo 27px', serif;
+}
