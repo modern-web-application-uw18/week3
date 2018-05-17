@@ -1,0 +1,37 @@
+#shoppingCart {
+  float: right;  
+}
+
+#shoppingCart ul {
+  width: 100%;  
+  padding: 13px;
+  list-style-type: none; 
+  border: .48em solid green;
+  border-radius: 13px; 
+}
+
+#shoppingCart .listingscart-item {
+  clear: left;
+  padding: 7px 19px;
+  min-height: 22px;
+}
+
+#shoppingCart .listingscart-details-name {
+  float: left;
+  width: 48%;
+}
+
+#shoppingCart .listingscart-details-remove {
+  float: left;
+  width: 13%;
+}
+
+#shoppingCart .listingscart-remove { 
+  background: #fd5c63;
+}
+
+#shoppingCart .listingscart-subtotal {
+  bottom: 48px;
+  right: 13px;
+  font-size: 19px;
+}
