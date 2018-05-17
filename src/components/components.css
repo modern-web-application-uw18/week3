@@ -1,0 +1,63 @@
+  .rent-btn {
+    color: #fff;
+    background-color: forestgreen;
+    border-color: forestgreen;
+  }
+  
+  .rent-btn:hover {
+    color: #fff;
+    background-color:orangered;
+    border-color: orangered;
+  }
+  
+  .remove-btn {
+    color: #fff;
+    background-color: darkred;
+    border-color: darkred;
+  }
+  
+  .remove-btn:hover {
+    color: #fff;
+    background-color: orangered;
+    border-color: orangered;
+  }
+
+  .each-rental {
+    border: 1px solid grey;
+    padding:1em;
+    border-bottom-style: none;
+  }
+
+  .rental-bottom img {
+    max-width: 100px;
+  }
+
+  .cart-total {
+    border: 1px solid grey;
+    padding:1em;
+    border-bottom-style: none;
+    display:inline-block;
+    background-color: lightgrey;
+    font-size: 16px;
+  }
+ 
+  .added-rentals {
+    list-style-type: none;
+  }
+
+  
+  h2 {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+    color: darkblue;
+  }
+
+  img {
+    max-width: 300px;
+  }
+  
+
+  
