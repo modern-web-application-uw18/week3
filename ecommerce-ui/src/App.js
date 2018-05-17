@@ -4,15 +4,12 @@ import {
   NavLink,
   BrowserRouter
 } from "react-router-dom";
-import airbnbs from './airbnbs.json';
 import Home from './Home';
 import Checkout from './Checkout';
-import BnbListings from './BnbListings/BnbListings';
 import BnbDetails from './BnbListings/BnbDetails';
 import './App.css';
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {

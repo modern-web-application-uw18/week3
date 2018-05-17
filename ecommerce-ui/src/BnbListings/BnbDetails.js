@@ -7,9 +7,6 @@ import HostIcon from './HostIcon';
 import BookForm from './BookForm';
 
 class BnbDetails extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   getHostIcon() {
     return (
@@ -70,28 +67,30 @@ export default BnbDetails;
 
 BnbDetails.propTypes = {
   addItemToCart: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
-  houseType: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  location: PropTypes.object.isRequired,
-  location: PropTypes.shape({
-    city: PropTypes.string,
-    country: PropTypes.string
-  }),
-  payment: PropTypes.object,
-  payment: PropTypes.shape({
-    cost: PropTypes.number,
-    description: PropTypes.string
-  }),
-  host: PropTypes.object,
-  host: PropTypes.shape({
-    name: PropTypes.string,
-    isSuperhost: PropTypes.bool
-  }),
-  rating: PropTypes.object,
-  rating: PropTypes.shape({
-    stars: PropTypes.number,
-    reviews: PropTypes.number
+  obj: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    houseType: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    location: PropTypes.object.isRequired,
+    location: PropTypes.shape({
+      city: PropTypes.string,
+      country: PropTypes.string
+    }),
+    payment: PropTypes.object,
+    payment: PropTypes.shape({
+      cost: PropTypes.number,
+      description: PropTypes.string
+    }),
+    host: PropTypes.object,
+    host: PropTypes.shape({
+      name: PropTypes.string,
+      isSuperhost: PropTypes.bool
+    }),
+    rating: PropTypes.object,
+    rating: PropTypes.shape({
+      stars: PropTypes.number,
+      reviews: PropTypes.number
+    })
   })
 };

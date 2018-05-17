@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Route,
-  Link,
-  BrowserRouter
+  Link
 } from "react-router-dom";
 import './BnbListings.css';
 import SuperHostIcon from './SuperHostIcon';
@@ -84,28 +82,30 @@ class bnbListings extends Component {
 export default bnbListings;
 
 bnbListings.propTypes = {
-  title: PropTypes.string.isRequired,
-  houseType: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  location: PropTypes.object.isRequired,
-  location: PropTypes.shape({
-    city: PropTypes.string,
-    country: PropTypes.string
-  }),
-  payment: PropTypes.object,
-  payment: PropTypes.shape({
-    cost: PropTypes.number,
-    description: PropTypes.string
-  }),
-  host: PropTypes.object,
-  host: PropTypes.shape({
-    name: PropTypes.string,
-    isSuperhost: PropTypes.bool
-  }),
-  rating: PropTypes.object,
-  rating: PropTypes.shape({
-    stars: PropTypes.number,
-    reviews: PropTypes.number
+  bnb: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    houseType: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    location: PropTypes.object.isRequired,
+    location: PropTypes.shape({
+      city: PropTypes.string,
+      country: PropTypes.string
+    }),
+    payment: PropTypes.object,
+    payment: PropTypes.shape({
+      cost: PropTypes.number,
+      description: PropTypes.string
+    }),
+    host: PropTypes.object,
+    host: PropTypes.shape({
+      name: PropTypes.string,
+      isSuperhost: PropTypes.bool
+    }),
+    rating: PropTypes.object,
+    rating: PropTypes.shape({
+      stars: PropTypes.number,
+      reviews: PropTypes.number
+    })
   })
 };

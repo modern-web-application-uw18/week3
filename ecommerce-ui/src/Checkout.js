@@ -5,9 +5,6 @@ import CheckoutTotal from './CheckoutListItem/CheckoutTotal';
 import './Checkout.css';
 
 class Checkout extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const listItemsBnbs =  this.props.itemsInCart;
@@ -30,5 +27,15 @@ export default Checkout;
 
 Checkout.propTypes = {
   removeItemFromCart: PropTypes.func.isRequired,
-  addItemToCart: PropTypes.func.isRequired
+  addItemToCart: PropTypes.func.isRequired,
+  item: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    houseType: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    city: PropTypes.string,
+    country: PropTypes.string,
+    paymentCost: PropTypes.number.isRequired,
+    paymentDescription: PropTypes.string,
+    stay: PropTypes.string.isRequired
+  }))
 };

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class CheckoutListItem extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -38,12 +35,14 @@ class CheckoutListItem extends Component {
 export default CheckoutListItem;
 
 CheckoutListItem.propTypes = {
-  title: PropTypes.string.isRequired,
-  houseType: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  city: PropTypes.string,
-  country: PropTypes.string,
-  paymentCost: PropTypes.number.isRequired,
-  paymentDescription: PropTypes.string,
-  stay: PropTypes.string.isRequired
+  item: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    houseType: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    city: PropTypes.string,
+    country: PropTypes.string,
+    paymentCost: PropTypes.number.isRequired,
+    paymentDescription: PropTypes.string,
+    stay: PropTypes.string.isRequired
+  })
 };
