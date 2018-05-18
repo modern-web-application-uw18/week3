@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Link
+  Link,
+  BrowserRouter
 } from "react-router-dom";
 import './BnbListings.css';
-import SuperHostIcon from './SuperHostIcon';
-import HostIcon from './HostIcon';
+import SuperHostIcon from '../HostIcon/SuperHostIcon';
+import HostIcon from '../HostIcon/HostIcon';
 
-class bnbListings extends Component {
+class BnbListings extends Component {
 
   getHostIcon() {
     return (
@@ -42,6 +43,7 @@ class bnbListings extends Component {
     const starNumber = this.props.bnb.rating.stars;
     const paymentDescription = this.props.bnb.payment.description;
     return (
+      <BrowserRouter>
       <section className="bnb-listing">
         <Link to={`/id/${this.props.bnb.id}`} style={{ textDecoration: 'none' }}>
           <div className="media" style={backgroundMediaStyles}>
@@ -75,13 +77,14 @@ class bnbListings extends Component {
           </div>
         </div>
       </section>
+      </BrowserRouter>
     );
   }
 }
 
-export default bnbListings;
+export default BnbListings;
 
-bnbListings.propTypes = {
+BnbListings.propTypes = {
   bnb: PropTypes.shape({
     title: PropTypes.string.isRequired,
     houseType: PropTypes.string.isRequired,

@@ -1,4 +1,4 @@
-@import './BnbListings.css';
+@import '../BnbListings/BnbListings.css';
 
 .bnb-details {
   display: flex;

@@ -5,8 +5,8 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import Home from './Home';
-import Checkout from './Checkout';
-import BnbDetails from './BnbListings/BnbDetails';
+import Checkout from './Checkout/Checkout';
+import BnbDetails from './BnbDetails/BnbDetails';
 import './App.css';
 
 class App extends Component {

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class CheckoutListItem extends Component {
 
   render() {
-    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const monthNames = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
     const dateOfStay = new Date(this.props.item.stay);
     const idListItem = this.props.id;
     return (

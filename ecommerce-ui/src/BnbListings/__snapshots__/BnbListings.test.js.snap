@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BnbListings component should render 1`] = `
+<section
+  className="bnb-listing"
+>
+  <a
+    href="/id/1490806230066"
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }
+  >
+    <div
+      className="media"
+      style={
+        Object {
+          "backgroundImage": "url(https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80)",
+        }
+      }
+    >
+      <div
+        className="more-info"
+      >
+        <span
+          className="more-info--text"
+        >
+          Learn More
+        </span>
+        <span
+          className="more-info--icon"
+        >
+          <svg
+            fill="none"
+            height="18"
+            stroke="white"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="12"
+              x2="12"
+              y1="5"
+              y2="19"
+            />
+            <line
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+  <div
+    className="content"
+  >
+    <a
+      href="/id/1490806230066"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <h2>
+        Apartment
+         · 
+        New York
+        , 
+        USA
+      </h2>
+      <h1>
+        Centrally-located Manhattan studio
+      </h1>
+      <p>
+        <span
+          className="price"
+        >
+          $
+          105
+        </span>
+         per night 
+        <span>
+          · 
+          Free cancellation
+        </span>
+      </p>
+    </a>
+    <div
+      className="bnb-stats"
+    >
+      <div
+        className="rating-data"
+      >
+        <div>
+          Rating: 
+          3
+           stars / 
+          133
+           reviews
+        </div>
+      </div>
+      <div
+        alt="Robert"
+        className="host-info"
+        title="Robert"
+      >
+        <div
+          className="host-icon"
+        >
+          <svg
+            fill="none"
+            height="24"
+            stroke="rgb(130, 110, 85)"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+            />
+            <circle
+              cx="8.5"
+              cy="7"
+              r="4"
+            />
+            <line
+              x1="20"
+              x2="20"
+              y1="8"
+              y2="14"
+            />
+            <line
+              x1="23"
+              x2="17"
+              y1="11"
+              y2="11"
+            />
+          </svg>
+        </div>
+        <a
+          href="/"
+        >
+          Robert
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;

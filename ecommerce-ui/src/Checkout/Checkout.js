@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CheckoutListItem from './CheckoutListItem/CheckoutListItem';
-import CheckoutTotal from './CheckoutListItem/CheckoutTotal';
+import CheckoutListItem from '../CheckoutListItem/CheckoutListItem';
+import CheckoutTotal from '../CheckoutListItem/CheckoutTotal';
 import './Checkout.css';
 
 class Checkout extends Component {

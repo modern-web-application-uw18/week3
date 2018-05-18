@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './BnbDetails.css';
 import airbnbs from '../airbnbs.json';
-import SuperHostIcon from './SuperHostIcon';
-import HostIcon from './HostIcon';
+import SuperHostIcon from '../HostIcon/SuperHostIcon';
+import HostIcon from '../HostIcon/HostIcon';
 import BookForm from './BookForm';
 
 class BnbDetails extends Component {
