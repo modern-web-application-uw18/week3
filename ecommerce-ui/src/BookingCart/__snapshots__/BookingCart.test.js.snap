@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Booking Cart component should render 1`] = `
+<div>
+  <div
+    className="Booking-Cart-container"
+  >
+    <div
+      className="Rental"
+    >
+      <div>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "className": "Rental-button",
+            }
+          }
+        >
+          Add to Cart
+        </button>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          Remove from Cart
+        </button>
+      </div>
+      <img
+        alt="Centrally-located Manhattan studio"
+        className="Rental-image"
+        src="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+      />
+      <div
+        className="Rental-title"
+      >
+        Centrally-located Manhattan studio
+      </div>
+      <div>
+        105
+        $ per night - 
+        Free cancellation
+      </div>
+    </div>
+    <div
+      className="Rental"
+    >
+      <div>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "className": "Rental-button",
+            }
+          }
+        >
+          Add to Cart
+        </button>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          Remove from Cart
+        </button>
+      </div>
+      <img
+        alt="Denver apartment outside Union Station"
+        className="Rental-image"
+        src="https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80"
+      />
+      <div
+        className="Rental-title"
+      >
+        Denver apartment outside Union Station
+      </div>
+      <div>
+        130
+        $ per night - 
+        
+      </div>
+    </div>
+    <div
+      className="Rental"
+    >
+      <div>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "className": "Rental-button",
+            }
+          }
+        >
+          Add to Cart
+        </button>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          Remove from Cart
+        </button>
+      </div>
+      <img
+        alt="Quaint 3-bedroom home in Gamla stan"
+        className="Rental-image"
+        src="https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80"
+      />
+      <div
+        className="Rental-title"
+      >
+        Quaint 3-bedroom home in Gamla stan
+      </div>
+      <div>
+        230
+        $ per night - 
+        Free cancellation
+      </div>
+    </div>
+  </div>
+  <h2>
+    Total Cart Summary: 
+    0
+    $
+  </h2>
+</div>
+`;

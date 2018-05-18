@@ -1,0 +1,23 @@
+.Rental {
+    width: 600px;
+    height: 400px;
+    border-width: 1px;
+    align-items: center;
+    flex-basis: 32%;
+    margin-top: 20px;
+}
+  
+  .Rental-image {
+    max-width: 300px;
+    padding: 10px;    
+  }
+
+  .Rental-title {
+    font-weight: bold;
+    text-align: center;    
+  }
+
+  .Rental-button {
+    margin: 2px;
+  }
+  
