@@ -44,6 +44,7 @@ class AirBnbLayout extends Component {
                 <h1>{this.props.city}, {this.props.country}  </h1>
               </div>
               <div className="rental-bottom">
+                <h2>{'$'+this.props.cost+' per night'}</h2>
                 <img src = {stars} alt= "stars"/>
                 <br></br><br></br>
                 <button value={this.props.id} onClick={this.props.addRental} className="rent-btn">Add to cart</button>
