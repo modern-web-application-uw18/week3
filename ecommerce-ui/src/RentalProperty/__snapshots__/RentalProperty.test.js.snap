@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rental property component should render 1`] = `
+<div
+  className="Rental"
+>
+  <div>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "className": "Rental-button",
+        }
+      }
+    >
+      Add to Cart
+    </button>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      Remove from Cart
+    </button>
+  </div>
+  <img
+    alt="Centrally-located Manhattan studio"
+    className="Rental-image"
+    src="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+  />
+  <div
+    className="Rental-title"
+  >
+    Centrally-located Manhattan studio
+  </div>
+  <div>
+    105
+    $ per night - 
+    Free cancellation
+  </div>
+</div>
+`;
