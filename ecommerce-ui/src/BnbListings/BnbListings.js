@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Link,
-  BrowserRouter
+  Link
 } from "react-router-dom";
 import './BnbListings.css';
 import SuperHostIcon from '../HostIcon/SuperHostIcon';
@@ -43,7 +42,6 @@ class BnbListings extends Component {
     const starNumber = this.props.bnb.rating.stars;
     const paymentDescription = this.props.bnb.payment.description;
     return (
-      <BrowserRouter>
       <section className="bnb-listing">
         <Link to={`/id/${this.props.bnb.id}`} style={{ textDecoration: 'none' }}>
           <div className="media" style={backgroundMediaStyles}>
@@ -77,7 +75,6 @@ class BnbListings extends Component {
           </div>
         </div>
       </section>
-      </BrowserRouter>
     );
   }
 }
