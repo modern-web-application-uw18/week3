@@ -1,0 +1,19 @@
+[{
+		"title": "Great Surfing",
+		"image": "https://unsplash.com/photos/Hk9T_06MJ2w/download?force=true",
+		"description": "We've teamed up with the World Surf League to offer surfing experiences around the world.",
+		"experiences": {
+			"type": "Surfing Experiences",
+			"amount": 200
+		}
+	},
+	{
+		"title": "Event Venues",
+		"image": "https://unsplash.com/photos/zNsSwsuyP3A/download?force=true",
+		"description": "Discover a new way to experience live events by hosting your own intimate shows in these unique spots.",
+		"experiences": {
+			"type": "Concerts",
+			"amount": 60
+		}
+	}
+]
