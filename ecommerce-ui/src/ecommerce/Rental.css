@@ -113,15 +113,16 @@
     font-size: 80%;
     color: black;
   
-    border-radius: .4rem;
+    border-radius: .3rem;
+    background: moccasin;
   }
 
   .shopping-cart {
     width: 90%;
-    /* height: 2rem; */
     border: .05rem dashed brown;
-    /* padding-bottom: .7rem; */
+    border-radius: .5rem;
     text-align: center;
     margin-top: 1rem;
     font-weight: bold;
+    margin-left: 5%;
   }

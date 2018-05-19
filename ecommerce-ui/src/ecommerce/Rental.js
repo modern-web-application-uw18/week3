@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Rental.css';
-import Cart from './ShoppingCart';
+// import Cart from './ShoppingCart';
 
 class Rental extends Component {
     constructor(props) {
@@ -16,14 +16,14 @@ class Rental extends Component {
             const items = prevState.items;
             const item = prevState.counter;
             let newCount = item + 1;
-            alert('add an item', newCount);
+            // alert('add an item', newCount);
             //add item to shopping cart
             if (item) {
                 items.push(newCount);
                 // alert('One item got added', item);
                 // item++;
             } else {
-                alert('You should add an item');
+                // alert('You should add an item');
             }
 
             return {

@@ -18,8 +18,9 @@ class App extends Component {
         {Rental}
         <div className='rental-body'>
           <div  className = 'shopping-cart'>
-            <p>Shopping Cart has 0 items</p>
+          <p>Shopping Cart has {0} items</p>
           </div>
+
           {
             airbnb.map((rental, indx)=> {
               return <Rental key={indx} rental={rental} />;

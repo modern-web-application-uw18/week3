@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Rental from './Rental';
 
 export class ShoppingCart extends Component {
     constructor(props) {
