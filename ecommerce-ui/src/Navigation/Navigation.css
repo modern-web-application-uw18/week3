@@ -1,6 +1,11 @@
 .shoppingCart {
-  font-size: 30px;
+  font-size: 2.5rem;
   position: absolute;
   bottom: 20px;
   color: rgb(255, 165, 0);
+  cursor: pointer;
+}
+
+.shoppingCart span.fa-layers-counter {
+  font-size: 3rem;
 }

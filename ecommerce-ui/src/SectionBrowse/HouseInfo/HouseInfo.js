@@ -31,8 +31,6 @@ export default class HouseInfo extends Component {
 
       const { houseType, location, title, payment, rating, host } = this.props.place;
 
-      console.log('this.props.onClick', this.props.addToCart);
-
         return (
           <div className="houseInfo">
             <div className="location">{houseType} - {location.country}</div>
@@ -45,9 +43,9 @@ export default class HouseInfo extends Component {
             <div>
               {rating.stars && createStars(rating.stars)} - {rating.reviews} reviews {host.isSuperhost && ` - Superhost`}
             </div>
-            <div className="addToCart">
+            {this.props.addToCart && <div className="addToCart" onClick={this.props.addToCart(this.props.place)}>
               + Add to Cart
-            </div>
+            </div>}
           </div>
         );
     }
