@@ -1,0 +1,16 @@
+.location {
+  font-family: 'Play', sans-serif;
+}
+
+.houseInfo {
+  position: relative;
+}
+
+.addToCart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+}
