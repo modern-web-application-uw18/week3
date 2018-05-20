@@ -38,14 +38,17 @@ export default class HouseInfo extends Component {
               {title}
             </div>
             <div className="text">
-              ${payment.cost} {payment.description && <span>- <span className="payDescription">{payment.description}</span></span>}
+              ${payment.cost} {payment.description &&
+                <span>- <span className="payDescription">{payment.description}</span></span>}
             </div>
             <div>
-              {rating.stars && createStars(rating.stars)} - {rating.reviews} reviews {host.isSuperhost && ` - Superhost`}
+              {rating.stars &&
+                createStars(rating.stars)} - {rating.reviews} reviews {host.isSuperhost && ` - Superhost`}
             </div>
-            {this.props.addToCart && <div className="addToCart" onClick={this.props.addToCart(this.props.place)}>
-              + Add to Cart
-            </div>}
+              {this.props.addToCart &&
+                <div className="addToCart" onClick={this.props.addToCart(this.props.place)}>+ Add to Cart</div>}
+              {this.props.removeFromCart &&
+                <div className="removeFromCart" onClick={this.props.removeFromCart(this.props.place)}>+ Remove from Cart</div>}
           </div>
         );
     }
