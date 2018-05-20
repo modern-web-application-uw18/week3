@@ -39,8 +39,31 @@ export default class Airbnb extends Component {
     addToCart = (obj) => {
       return () => {
           this.setState((prevState, props) => {
-            let newCart = prevState.myCartItems; // save previous state AS newCart variable
-            newCart.push(obj); // add new item to old shopping cart which makes it a NewCart =]
+            const oldCart = prevState.myCartItems;
+            const alreadyInCart = oldCart.find((item) => obj.title === item.title);
+            const newCart = prevState.myCartItems; // save previous state AS newCart variable
+            if (alreadyInCart){
+                window.alert('You already have this item in your cart');
+            } else {
+              newCart.push(obj); // add new item to old shopping cart which makes it a NewCart =]
+              return {  // return the new cart to save the state
+                myCartItems: newCart,
+                noItems: newCart.length
+              }
+            }
+          });
+      }
+    }
+
+    /**
+    * adds a new object to the myCartItems array
+    * @param {object} obj - the object to save into the shopping cart
+    * @return {object} the updated shopping cart with the new obj added.
+    */
+    removeFromCart = (obj) => {
+      return () => {
+          this.setState((prevState, props) => {
+            let newCart = prevState.myCartItems.filter((item, index) => item.title !== obj.title); // save previous state AS newCart variable
             return {  // return the new cart to save the state
               myCartItems: newCart,
               noItems: newCart.length
@@ -64,7 +87,7 @@ export default class Airbnb extends Component {
     render() {
         const myCart = this.state.myCartItems;
         const myItems = myCart.map((place, index) => {
-          return <Card place={place} image={place.image} key={index} index={index}/>
+          return <Card place={place} image={place.image} key={index} index={index} removeFromCart={this.removeFromCart}/>
         });
 
         return (
