@@ -1,0 +1,13 @@
+[{
+		"text": "Home",
+		"url": "/"
+	},
+	{
+		"text": "Search",
+		"url": "/searches"
+	},
+	{
+		"text": "Articles",
+		"url": "/articles"
+	}
+]

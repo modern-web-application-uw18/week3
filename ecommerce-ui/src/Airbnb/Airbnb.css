@@ -1,0 +1,72 @@
+.myCart {
+  position: fixed;
+  height: 80%;
+  width: 80%;
+  /* top: 3%; */
+  /* left: 6%; */
+  background: white;
+  border: 5px dotted rgb(128, 128, 128);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.modal {
+  background: rgba(0, 0, 0, .75);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.myCartContents {
+  margin: 0 auto;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.myCartContents h2 {
+  width: 100%;
+}
+
+.myCartContents .card {
+  height: 380px;
+}
+
+.closeCart {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.closeCart .fa-times-circle {
+  color: red;
+}
+
+.closeCart .fa-circle {
+  color: white;
+}
