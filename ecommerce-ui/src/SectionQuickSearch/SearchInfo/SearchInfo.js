@@ -26,3 +26,10 @@ SearchInfo.propTypes = {
     description: PropTypes.string.isRequired
   })
 }
+
+SearchInfo.defaultProps = {
+  search: {
+    houseAmount: 0,
+    description: 'test_description'
+  }
+}

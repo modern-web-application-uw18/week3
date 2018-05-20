@@ -89,7 +89,7 @@ export default class Airbnb extends Component {
                     {myItems}
                     <div className="closeCart" onClick={this.hideCart}>
                       <span className="fa-layers fa-fw">
-                        <FontAwesomeIcon icon={faCircle} inverse transform="shrink-6"/>
+                        <FontAwesomeIcon icon={faCircle} />
                         <FontAwesomeIcon icon={faTimesCircle} />
                       </span>
                     </div>

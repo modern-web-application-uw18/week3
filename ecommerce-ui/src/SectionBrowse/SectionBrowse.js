@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Card from '../Card/Card.js';
 
-export default class Places extends Component {
+export default class SectionBrowse extends Component {
 
     render() {
       const airbnbs = this.props.airbnbs;
@@ -20,7 +20,34 @@ export default class Places extends Component {
     }
 }
 
-Places.propTypes = {
+SectionBrowse.propTypes = {
   airbnbs: PropTypes.array.isRequired,
   addToCart: PropTypes.func.isRequired
+}
+
+SectionBrowse.defaultProps = {
+  airbnbs: [{
+    title: 'test_title',
+    houseType: 'Condo',
+    image: 'test_image',
+    location: {
+      city: 'honolulu',
+      country: 'USA'
+    },
+    payment: {
+      cost: 999,
+      description: 'Free cancellation'
+    },
+    host: {
+      name: 'Eric',
+      isSuperhost: true
+    },
+    rating: {
+      stars: 5,
+      review: 999
+    }
+  }],
+  addToCart: () => {
+    console.log('add to cart test function');
+  }
 }

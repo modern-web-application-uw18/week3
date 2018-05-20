@@ -23,3 +23,12 @@ export default class QuickSearches extends Component {
 QuickSearches.propTypes = {
   'quickSearch': PropTypes.array.isRequired
 }
+
+QuickSearches.defaultProps = {
+  quickSearch: [{
+    title: 'test_title',
+    houseAmount: 0,
+    image: 'test_image',
+    description: 'test_description'
+  }]
+}

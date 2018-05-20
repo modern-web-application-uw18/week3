@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Card from '../Card/Card.js';
 
-export default class Articles extends Component {
+export default class SectionArticles extends Component {
 
     render() {
       const articles = this.props.articles;
@@ -20,6 +20,18 @@ export default class Articles extends Component {
     }
 }
 
-Articles.propTypes = {
+SectionArticles.propTypes = {
   articles: PropTypes.array.isRequired
+}
+
+SectionArticles.defaultProps = {
+  articles: [{
+    title: 'test_title',
+    image: 'test_url',
+    description: 'this is a test description',
+    experiences: {
+      type: 'Mind Exploding',
+      amount: 1
+    }
+  }]
 }

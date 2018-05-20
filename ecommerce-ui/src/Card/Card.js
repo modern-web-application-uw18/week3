@@ -31,3 +31,7 @@ Card.propTypes = {
   search: PropTypes.object,
   addToCart: PropTypes.func
 }
+
+Card.defaultProps = {
+  image: 'test_image',
+}

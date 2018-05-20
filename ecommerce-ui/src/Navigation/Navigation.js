@@ -32,3 +32,14 @@ Navigation.propTypes = {
   showCart: PropTypes.func.isRequired,
   noItems: PropTypes.number.isRequired
 }
+
+Navigation.defaultProps = {
+  navItems: [{
+    text: 'myHome',
+    url: '#'
+  }],
+  showCart: () => {
+    console.log('test show cart function');
+  },
+  noItems: 999
+}
