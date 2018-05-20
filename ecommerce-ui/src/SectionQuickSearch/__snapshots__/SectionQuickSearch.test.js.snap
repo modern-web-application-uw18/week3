@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionQuickSearch Match Snapshot 1`] = `
+<section
+  className="searches"
+>
+  <h2>
+    Quick Searches
+  </h2>
+  <div
+    className="card"
+  >
+    <div
+      className="coverImage"
+      style={
+        Object {
+          "background": "url('test_image') center / cover no-repeat",
+        }
+      }
+    >
+      <span
+        className="textOverlay"
+      >
+        test_title
+      </span>
+    </div>
+    <div
+      className="cardInfo"
+    >
+      <div
+        className="quickSearch"
+      >
+        <div
+          className="title"
+        >
+          0
+           airbnbs available
+        </div>
+        <div
+          className="text"
+        >
+          test_description
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

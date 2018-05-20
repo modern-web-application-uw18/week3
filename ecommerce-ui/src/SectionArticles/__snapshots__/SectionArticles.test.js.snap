@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionArticles Match Snapshot 1`] = `
+<section
+  className="articles"
+>
+  <h2>
+    Plan An Event
+  </h2>
+  <div
+    className="card"
+  >
+    <div
+      className="coverImage"
+      style={
+        Object {
+          "background": "url('test_url') center / cover no-repeat",
+        }
+      }
+    >
+      <span
+        className="textOverlay"
+      >
+        test_title
+      </span>
+    </div>
+    <div
+      className="cardInfo"
+    >
+      <div
+        className="articleInfo"
+      >
+        <div
+          className="title"
+        >
+          1
+          + 
+          Mind Exploding
+        </div>
+        <div
+          className="text"
+        >
+          this is a test description
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
