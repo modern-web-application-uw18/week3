@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 
 import './SearchInfo.css';
 
@@ -9,7 +10,7 @@ export default class SearchInfo extends Component {
         return (
           <div className="quickSearch">
             <div className="title">
-              {houseAmount} homes
+              {houseAmount >= 2000 ? '2000+' : houseAmount} airbnbs available
             </div>
             <div className="text">
               {description}
@@ -17,4 +18,18 @@ export default class SearchInfo extends Component {
           </div>
         );
     }
+}
+
+SearchInfo.propTypes = {
+  search: PropTypes.shape({
+    houseAmount: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired
+  })
+}
+
+SearchInfo.defaultProps = {
+  search: {
+    houseAmount: 0,
+    description: 'test_description'
+  }
 }

@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faStar from '@fortawesome/fontawesome-free-solid/faStar';
@@ -9,7 +10,6 @@ import './HouseInfo.css';
 export default class HouseInfo extends Component {
 
     render() {
-
       /**
       * Render font awesome stars
       */
@@ -51,4 +51,24 @@ export default class HouseInfo extends Component {
     }
 }
 
-// () => {console.log('add to cart', this.props.place)}
+HouseInfo.propTypes = {
+  place: PropTypes.shape({
+    houseType: PropTypes.string,
+    location: PropTypes.shape({
+      country: PropTypes.string,
+      city: PropTypes.string
+    }),
+    title: PropTypes.string,
+    payment: PropTypes.shape({
+      cost: PropTypes.number,
+      description: PropTypes.string
+    }),
+    rating: PropTypes.shape({
+      stars: PropTypes.number,
+      review: PropTypes.number
+    }),
+    host: PropTypes.shape({
+      isSuperHost: PropTypes.bool
+    })
+  })
+}

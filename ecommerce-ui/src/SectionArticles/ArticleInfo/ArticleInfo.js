@@ -6,7 +6,6 @@ import './ArticleInfo.css';
 export default class ArticleInfo extends Component {
 
     render() {
-      console.log(this.props.article);
       const { description, experiences } = this.props.article;
         return (
           <div className="articleInfo">
@@ -23,20 +22,20 @@ export default class ArticleInfo extends Component {
 
 ArticleInfo.propTypes = {
   article: PropTypes.shape({
-    description: PropTypes.string.isRequired
+    description: PropTypes.string.isRequired,
+    experiences: PropTypes.shape({
+      amount: PropTypes.number.isRequired,
+      type: PropTypes.string.isRequired,
+    }).isRequired
   }).isRequired,
-  experiences: PropTypes.shape({
-    amount: PropTypes.number.isRequired,
-    type: PropTypes.string.isRequired,
-  }).isRequired
 }
 
 ArticleInfo.defaultProps = {
   article: {
-    description: ''
+    description: '',
+    experiences: {
+      amount: 0,
+      type: 'experiences'
+    }
   },
-  experiences: {
-    amount: 0,
-    type: 'experiences'
-  }
 }

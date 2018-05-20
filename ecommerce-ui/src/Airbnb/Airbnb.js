@@ -83,17 +83,17 @@ export default class Airbnb extends Component {
 
 
               <div id="myShoppingCart" className="modal hide">
-                              <div className="myCart">
-                <h2>Your Shopping Cart</h2>
-                <div className="myCartContents">
-                  {myItems}
-                  <div className="closeCart" onClick={this.hideCart}>
-                    <span className="fa-layers fa-fw">
-                      <FontAwesomeIcon icon={faCircle} inverse transform="shrink-6"/>
-                      <FontAwesomeIcon icon={faTimesCircle} color="red"/>
-                    </span>
+                <div className="myCart">
+                  <h2>Your Shopping Cart</h2>
+                  <div className="myCartContents">
+                    {myItems}
+                    <div className="closeCart" onClick={this.hideCart}>
+                      <span className="fa-layers fa-fw">
+                        <FontAwesomeIcon icon={faCircle} />
+                        <FontAwesomeIcon icon={faTimesCircle} />
+                      </span>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </main>
@@ -101,11 +101,3 @@ export default class Airbnb extends Component {
         );
     }
 }
-
-// <span className="fa-layers fa-fw">
-//   <FontAwesomeIcon icon={faTimesCircle} />
-//   <span className="fa-layers-counter">{this.props.noItems}</span>
-// </span>
-
-
-// <Route path="/shoppingCart" render={showCart}/> />

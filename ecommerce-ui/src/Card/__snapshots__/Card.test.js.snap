@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Match Snapshot 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="coverImage"
+    style={
+      Object {
+        "background": "url('test_image') center / cover no-repeat",
+      }
+    }
+  />
+  <div
+    className="cardInfo"
+  />
+</div>
+`;

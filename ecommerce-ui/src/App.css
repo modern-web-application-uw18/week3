@@ -25,9 +25,7 @@ nav {
 }
 
 .places .card {
-  /* width: 30%; */
   flex-grow: 1;
-  /* border: 1px solid #f4f4f4; */
 }
 
 .App>header {
@@ -45,6 +43,5 @@ nav {
 
 .articles .card,
 .searches .card {
-  /* width: 40%; */
   flex-grow: 1;
 }
