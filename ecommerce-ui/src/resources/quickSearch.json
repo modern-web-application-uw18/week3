@@ -1,12 +1,12 @@
 [{
 		"title": "For Family",
-		"houseAmount": "2000+",
+		"houseAmount": 2136,
 		"image": "https://unsplash.com/photos/7noZJ_4nhU8/download?force=true",
 		"description": "Need a place to stay for that family vacation?"
 	},
 	{
 		"title": "For Work",
-		"houseAmount": "2000+",
+		"houseAmount": 1569,
 		"image": "https://unsplash.com/photos/y_jDYDXopI0/download?force=true",
 		"description": "Need a place to stay for that business trip?"
 	}

@@ -15,11 +15,3 @@ class App extends Component {
 }
 
 export default App;
-
-// TODO:
-// Build Shopping Cart
-
-// container
-//   shoppping cart
-//   card container
-//     card

@@ -6,7 +6,6 @@ import './ArticleInfo.css';
 export default class ArticleInfo extends Component {
 
     render() {
-      console.log(this.props.article);
       const { description, experiences } = this.props.article;
         return (
           <div className="articleInfo">

@@ -6,7 +6,6 @@ import Card from '../Card/Card.js';
 export default class QuickSearches extends Component {
 
     render() {
-      console.log('quick search', this.props.quickSearch);
       const quickSearch = this.props.quickSearch;
       const searches = quickSearch.map((search, index) => {
         return <Card search={search} title={search.title} image={search.image} key={index} index={index}/>
@@ -22,10 +21,5 @@ export default class QuickSearches extends Component {
 }
 
 QuickSearches.propTypes = {
-  'quickSearch': PropTypes.shape({
-    'search': PropTypes.shape({
-      'title': PropTypes.string,
-      'image': PropTypes.string
-    }).isRequired
-  })
+  'quickSearch': PropTypes.array.isRequired
 }

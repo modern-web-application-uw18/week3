@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './Card.css';
 
@@ -20,4 +21,13 @@ export default class Card extends Component {
             </div>
         );
     }
+}
+
+Card.propTypes = {
+  index: PropTypes.number,
+  image: PropTypes.string.isRequired,
+  place: PropTypes.object,
+  article: PropTypes.object,
+  search: PropTypes.object,
+  addToCart: PropTypes.func
 }

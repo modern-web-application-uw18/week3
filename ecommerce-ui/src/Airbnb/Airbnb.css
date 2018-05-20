@@ -1,12 +1,13 @@
 .myCart {
   position: fixed;
-  height: 90%;
-  width: 90%;
-  top: 3%;
-  left: 6%;
+  height: 80%;
+  width: 80%;
+  /* top: 3%; */
+  /* left: 6%; */
   background: white;
   border: 5px dotted rgb(128, 128, 128);
   text-align: center;
+  border-radius: 20px;
 }
 
 .modal {
@@ -19,6 +20,9 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hide {
@@ -34,12 +38,13 @@
 
 .myCartContents {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 90%;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow: auto;
 }
 
 .myCartContents h2 {
@@ -56,5 +61,12 @@
   right: -20px;
   font-size: 2rem;
   cursor: pointer;
+}
 
+.closeCart .fa-times-circle {
+  color: red;
+}
+
+.closeCart .fa-circle {
+  color: white;
 }

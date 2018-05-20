@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 
 import Card from '../Card/Card.js';
 
@@ -17,4 +18,9 @@ export default class Places extends Component {
           </section>
         );
     }
+}
+
+Places.propTypes = {
+  airbnbs: PropTypes.array.isRequired,
+  addToCart: PropTypes.func.isRequired
 }
