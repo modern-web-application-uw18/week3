@@ -9,24 +9,11 @@
     padding: 0 1rem;
     /* background: rgb(255, 255, 150); */
   }
-
-  .alt-rental-property {
-    position: relative;
-    display: flex;
-    border: .1rem dotted lightgray;
-    margin: 1rem 1rem;
-    font: normal normal 16px/20px Arial san-serif;
-  
-    height: 13rem;
-    
-    width: 45%;
-  }
   
   .rental-property {
-    border: .1rem dotted lightgray;
+    border: .1rem dashed lightgray;
     margin: 1rem 0;
     font: normal normal 16px/20px Arial san-serif;
-    height: 19rem;
     width: 21rem;
     margin: 1rem .3rem;
   }
