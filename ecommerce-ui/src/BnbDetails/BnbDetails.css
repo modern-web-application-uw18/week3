@@ -1,0 +1,34 @@
+@import '../BnbListings/BnbListings.css';
+
+.bnb-details {
+  display: flex;
+}
+
+.bnb-details .media {
+  max-width: 32rem;
+}
+
+.bnb-details .media img {
+  width: 100%;
+  border: .5px solid rgba(0,0,0,.1);
+}
+
+.bnb-details .content {
+  padding: 1rem;
+}
+
+.bnb-details .bnb-stats {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 640px) {
+  .bnb-details {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .bnb-details {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,82 @@
+.checkout-list {
+  margin: 3rem 3rem 1.5rem 3rem;
+}
+
+.checkout-list-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.checkout-list-item .media {
+  width: 5rem;
+}
+
+.checkout-list-item .media img {
+  width: 100%;
+}
+
+.checkout-list-item .checkout-list-item--details {
+  flex-grow: 2;
+}
+
+.checkout-list-item .checkout-list-item--payment {
+  width: 3rem;
+}
+
+.checkout-list-item .checkout-list-item--stay {
+  flext-grow: 1;
+}
+
+.checkout-list-item .checkout-list-item--stay,
+.checkout-list-item .checkout-list-item--payment,
+.checkout-list-item .checkout-list-item--details,
+.checkout-list-item .media {
+  margin: 0 .8rem;
+}
+
+.checkout-list-item h1 {
+  margin-bottom: .2rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+  color: rgb(130, 110, 85);
+}
+
+.checkout-list-item h2 {
+  font-size: .8rem;
+}
+
+.checkout-list-item .checkout-list-item--payment p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.checkout-list .checkout-total {
+  flex-basis: 100%;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: .5px solid rgb(68, 58, 45);
+  margin-top: 1.8rem;
+}
+
+.checkout-list .checkout-total p {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.checkout-list .checkout-total p span {
+  font-weight: bold;
+}
+
+.checkout-list-item .checkout-list-item--remove p {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(130, 110, 85);
+  font-size: .8rem;
+}
+
+.checkout-list-item .checkout-list-item--remove p:hover {
+  text-decoration: underline;
+}
