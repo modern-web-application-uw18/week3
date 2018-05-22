@@ -15,6 +15,10 @@ const Wrapper = styled.table`
   tr:nth-child(even) {
     background: #ddd;
   }
+
+  button {
+    margin-top: 8px;
+  }
 `;
 
 const CartTable = ({ cart }) => (
@@ -24,16 +28,23 @@ const CartTable = ({ cart }) => (
         <th>Item Name</th>
         <th>Item Price</th>
         <th>Item Quantity</th>
+        <th>Remove</th>
       </tr>
     </thead>
     <tbody>
       {cart.items.map(item => (
         <tr key={item.productId}>
         <td>{item.product.title}</td>
-        <td>{item.product.payment.cost}</td>
+        <td className="paymentCost">{item.product.payment.cost}</td>
         <td>{item.quantity}</td>
+        <button>Remove</button>
         </tr>
       ))}
+      <tr>
+        <td>Total</td>
+        <td></td>
+        <td></td>
+      </tr>
     </tbody>
   </Wrapper>
 );
