@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import $ from 'jquery'; 
 
 const Wrapper = styled.table`
   width: 100%;
@@ -13,11 +14,7 @@ const Wrapper = styled.table`
   }
 
   tr:nth-child(even) {
-    background: #ddd;
-  }
-
-  button {
-    margin-top: 8px;
+    background: #eee;
   }
 `;
 
@@ -33,17 +30,24 @@ const CartTable = ({ cart }) => (
     </thead>
     <tbody>
       {cart.items.map(item => (
-        <tr key={item.productId}>
-        <td>{item.product.title}</td>
-        <td className="paymentCost">{item.product.payment.cost}</td>
-        <td>{item.quantity}</td>
-        <button>Remove</button>
+        <tr className="cartItem" key={item.productId}>
+          <td>{item.product.title}</td>
+          <td className="paymentCost">{item.product.payment.cost}</td>
+          <td>{item.quantity}</td>
+          <td>
+            <button className="thisButton" onClick={() => {
+              console.log(item);
+              $(".cartItem").css({"display" : "none"});
+              localStorage.clear();
+            }}>Remove</button>
+          </td>
         </tr>
       ))}
       <tr>
         <td>Total</td>
         <td></td>
         <td></td>
+        <td className="removeAllItems"></td>
       </tr>
     </tbody>
   </Wrapper>
