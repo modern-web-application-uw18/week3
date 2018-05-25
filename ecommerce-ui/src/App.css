@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #aee5ba;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+}
+
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 124px;
+  padding: 0;
+  float: left;
+  display: block;
+}
+
+.App-cart {
+  float: right;
+  display: block;
+  padding: 0;
+  font-size: 1.5em;
+  margin-top: 95px;
+}
+
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* // Cart */
+.location {
+  
+  margin: 12px;
+  padding-bottom: 24px;
+  border: 1px solid lightblue;  
+  width: max-content;
+  border-radius: 2%;
+}
+
+.location img {
+  -webkit-border-radius: 2% 2% 0 0;
+  -moz-border-radius: 2% 2% 0 0;
+  border-radius: 2% 2% 0 0;
+}
+
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  border-color: 0;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
+
+
