@@ -4,8 +4,10 @@ class TotalArea extends Component {
     calculateTotal = () => {
         console.log('CalcTotal',this.props);
         const { items } = this.props;
+        //console.log('my items', items[1]);
         const total = items.reduce((runningTotal, item) => {
             const cost = parseFloat(item.cost);
+            console.log('cost', item.cost);
             if (Number.isNaN(cost)) {
                 return runningTotal;
             }
