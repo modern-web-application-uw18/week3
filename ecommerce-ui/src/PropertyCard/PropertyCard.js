@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import './PropertyCard.css';
+import PropTypes from 'prop-types';
 
 class PropertyCard extends Component {
-    
-    // handleClick = () => {
-    //     console.log('title', listing.title);
-    //     console.log('cost', listing.payment.cost);
-    // }
-    
+       
     render() {
         const objAirBnB = this.props.dataAirBnB;
 
@@ -38,5 +34,10 @@ class PropertyCard extends Component {
         )
     }
 }
+
+PropertyCard.propTypes = {
+    dataAirBnB: PropTypes.array
+  };
+
 
 export default PropertyCard;

@@ -4,6 +4,7 @@ import PropertyCard from './../PropertyCard/PropertyCard';
 import TotalArea from './../TotalArea/TotalArea';
 import AirBnBData from './../data/airbnbs.json';
 import './VacationRentals.css';
+import PropTypes from 'prop-types';
 
 class VacationRentals extends Component {
     
@@ -11,9 +12,8 @@ class VacationRentals extends Component {
         super(props);
         this.state = {
         lineItems: [
-            { name: 'test', cost: 10 },
-            { name: 'test2', cost: 25 }
-            ]
+            { name: '', cost: 0 }
+        ]
         }
     }
     addToCart = (items) => {
@@ -22,26 +22,26 @@ class VacationRentals extends Component {
         this.setState((prevState, props) => {
             //console.log('items', items);
             //console.log('AirBnBData', AirBnBData);
-
-        
-
+            const newLineItems = prevState.lineItems;
             AirBnBData.map((listing)=> {
                 //console.log('listing title', listing.title);
+                
                 if (items === listing.title){
                     
                     const lineItem = {
                         name: listing.title,
                         cost: listing.payment.cost
                     }
-                    const newLineItems = prevState.lineItems;
-                    newLineItems.push(lineItem);
                     
-                    return {
-                        lineItems: newLineItems
-                    };
+                    newLineItems.push(lineItem);
+                   
 
-                }
+                } 
+
             })
+            return {
+                lineItems: newLineItems
+            };
 
         });
     }
@@ -60,5 +60,6 @@ class VacationRentals extends Component {
         );
     }
 }
+
 
 export default VacationRentals;
