@@ -1,0 +1,114 @@
+.rentalsBody{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*background-color: #fff;*/
+    display: flex;
+    flex-wrap: wrap;
+    font-family:  Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 20px;
+    padding-top: 20px;
+
+}
+
+.CardAndButton{
+    display: flex;
+    border: 10px solid white;
+    height: 600px;
+    width: 45%;
+    flex-direction: column;
+}
+
+.Card-container{
+   /* background-color: pink;*/
+    color: black;  
+    width: 100%;
+    display: flex; /*This turns it into a NESTED flex container  */
+    justify-content: flex-start; /*Will have the items on the left */
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+ }
+
+ .Card-img{
+    width: stretch;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+   /* background-color: green;*/
+    padding: 0px;
+}
+
+ .theImage{
+    display: flex;
+} 
+
+.House-type-city-title{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+ .Card-housetype{
+     color: rgb(35,19,65);
+     font-size: 16px;
+     line-height: 18px;
+     margin: 0px;
+     align-items: center;
+     justify-content: flex-start;
+     display: flex;
+
+ }
+
+ .Card-title{
+     font-size: 19px;
+     line-height: 21px;
+     margin: 0px;
+     display: flex;
+ }
+
+ .Card-payment{
+    margin: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 0px;
+ }
+
+.Cart-Button{
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background: #FF5A5F !important;
+    color: white;
+    font-size: 16px;
+}
+
+.Card-rating{
+    flex-direction: row;
+    display: flex;
+    padding-left: 10px;
+    
+}
+
+.Number-reviews{
+    display: flex;
+    align-items: flex-end;
+}
+
+.reviews{
+    display: flex;
+    text-align: center;
+}
+
+.Stars{
+   justify-content: center;
+   display: flex;
+}
