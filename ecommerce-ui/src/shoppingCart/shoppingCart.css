@@ -1,0 +1,44 @@
+
+.Cart-Container{
+    /*background-color: lightskyblue;*/
+    justify-content: flex-start;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.Cart-title{
+    font-weight: 800 !important;
+    margin-bottom: 0px !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    letter-spacing: normal !important;
+}
+
+.Cart-total{
+    font-weight: 800 !important;
+    margin-bottom: 0px !important;
+    font-size: 20px !important;
+    line-height: 35px !important;
+    letter-spacing: normal !important;
+    justify-content: flex-end;
+}
+
+.Cart-line-Item{ 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Shopping-cart{  
+    display: flex;
+}
+
+.Remove-button{ /* just the button itself */
+    display: flex;
+}
