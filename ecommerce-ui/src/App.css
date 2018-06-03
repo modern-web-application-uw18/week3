@@ -1,61 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 .App-logo {
-  display: inline-block;
-  position: relative;
-  margin-top: 7px;
-  margin-left: -30px;
   animation: App-logo-spin infinite 20s linear;
-  height: 150px;
-  text-align: left;
+  height: 100px;
 }
+
 .App-header {
-  width: 100%;
-  height: 80px;
+  background-color: #222;
+  height: 110px;
+  padding: 5px;
+  color: white;
 }
 
 .App-title {
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@font-face {
-  font-style: normal;
-  src: url('https://fonts.googleapis.com/css?family=Arimo:400,700');
-}
-
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.body {
-  font-family: 'Arimo', sans-serif;
-  line-height: 20px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.div {
-  width: 40%;
-  height: auto;
-  display: inline-block;
-  border: 2px solid #000000;
-  margin-right: 10px;
-  content: contain;
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .container {
@@ -64,11 +36,27 @@
   display: inline-block;
   position: relative;
   border: 1px solid rgb(217, 218, 220);
+  border-radius: 5px;
   margin-top: 16px;
   margin-right: 14px;
   vertical-align: top;
   overflow: hidden;
 }
+
+.header {
+  width: 100%;
+  height: 100px;
+  margin: 0 200px 0 auto;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+}
+
+.header h1 {
+  margin-right: 20px;
+  font-weight: 100;
+}
+
 
 .rental-card {
   width: 50%;
@@ -90,17 +78,6 @@
   object-fit: cover;
   background-position: 50% 50% !important;
   background-size: cover !important;
-}
-
-.uiScale {
-  line-height: 20px;
-  font-size: 16px;
-  position: relative !important;
-}
-
-.box {
-  line-height: 20px;
-  font-size: 16px;
 }
 
 .title {
@@ -150,7 +127,7 @@ a {
   text-decoration: none;
 }
 
-.addToCart{
+.addToCart {
   width: 150px;
   height: 50px;
   display: block;
@@ -162,14 +139,15 @@ a {
   text-align: center;
   cursor: pointer;
   bottom: 0;
+  font-weight: 100;
 }
 
 .addToCart:hover {
   background-color: rgb(76, 70, 70);
 }
 
-.shoppingCart{
-  margin-top: 10px;
+.shoppingCart {
+  margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 55px;
   font-size: 12px;

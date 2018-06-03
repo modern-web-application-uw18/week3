@@ -8,64 +8,57 @@ class ShoppingCart extends Component {
     constructor(props) {
         super(props);
             this.state = {
-                rentals: [
-                    { items: '', total: 0 }
-            ]
+                rentals: [],
+                rental: {},
+                total: 0
         }
+        this.addRental = this.addRental.bind(this);
+        this.calculateTotal = this.calculateTotal.bind(this);
     }
 
-    onItemChange = (idx) => { //what is this doing?
-        return (attr) => {
-            return (e) => {
-                const newValue = e.target.value;
+    addRental = (itemTitle, itemCost) => { 
+        let item_Title = itemTitle;
+        let item_Cost = itemCost;
+        this.setState({rental:{item: item_Title, cost: item_Cost}});
+        setTimeout(() => {
                 this.setState((prevState, props) => {
                     const newRentals = prevState.rentals;
-                    newRentals[idx][attr] = newValue;
+                    newRentals.push(this.state.rental);
                     return {
                         rentals: newRentals
                     };
                 });
-            }
-        }
-    }
-
-    addRental = (idx) => {  // what is this doing?
-        alert('button clicked');
-        // this.setState((prevState, props) => {
-        //     const rental = {
-        //         item: this.item,
-        //         cost: this.item.cost
-        //     };
-        //     const newRentals = prevState.rentals
-        //     newRentals.push(rental);
-        //     return {
-        //         rentals: newRentals
-        //     };
-        // });
-        console.log(this.state.rentals);
+            }, 50);
+         setTimeout (() => {
+             this.calculateTotal();
+         }, 60);
     }
 
     calculateTotal = () => {
-        const { rentals } = this.props;
-        const total = rentals.reduce((runningTotal, rental) => {
+        const rentals = this.state.rentals;
+        console.log('rentals as seen from calculateTotal', rentals);
+        let total = rentals.reduce((runningTotal, rental) => {
             const cost = parseFloat(rental.cost);
             return runningTotal + cost;
         }, 0);
+        console.log('Total is:', total);
+        this.setState({total: total});
         return total;
     }
-
+    
     render() {
         const listRentals = this.state.rentals.map((rental) => {
             return (
                 {listRentals}
             )
         });
-        //console.log(this.state); // works
         return (
             <div className='shoppingCart'>
-                <h1>SHOPPING CART: {this.state.total}</h1>
+                <div className='header'>
+                    <h1>SHOPPING CART Total: ${this.state.total}</h1>
+                </div>
                 <div>
-                    <RentCard data={this.props.data} addRental={this.props.addRental} />  
+                    <RentCard data={this.props.data} addRental={this.addRental} />  
                 </div>
             </div>
         );
@@ -77,3 +70,20 @@ ShoppingCart.propTypes = {
 }
 
 export default ShoppingCart;
+
+
+// onItemChange = (idx) => {
+//     return (attr) => {
+//         return (e) => {
+//             const newValue = e.target.value;
+//             this.setState((prevState, props) => {
+//                 const newRentals = prevState.rentals;
+//                 newRentals[idx][attr] = newValue;
+//                 return {
+//                     rentals: newRentals
+//                 };
+//             });
+//         }
+//     }
+// }
+
