@@ -3,15 +3,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  height: 100%;
 }
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 100px;
 }
 
 .App-header {
@@ -25,11 +21,6 @@ body {
   font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .container {
   width: 30%;
   height: 360px;
@@ -41,6 +32,7 @@ body {
   margin-right: 14px;
   vertical-align: top;
   overflow: hidden;
+  z-index: 0;
 }
 
 .header {
@@ -56,7 +48,6 @@ body {
   margin-right: 20px;
   font-weight: 100;
 }
-
 
 .rental-card {
   width: 50%;
@@ -127,7 +118,7 @@ a {
   text-decoration: none;
 }
 
-.addToCart {
+.addToCartButton {
   width: 150px;
   height: 50px;
   display: block;
@@ -140,9 +131,10 @@ a {
   cursor: pointer;
   bottom: 0;
   font-weight: 100;
+  outline: none;
 }
 
-.addToCart:hover {
+.addToCartButton:hover {
   background-color: rgb(76, 70, 70);
 }
 
@@ -152,4 +144,98 @@ a {
   margin-right: 55px;
   font-size: 12px;
   text-align: right;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  z-index: 9;
+  background-color: rgba(178, 178, 178, 0.74);
+}
+
+.cart {
+  width: 40%;
+  height: 100%;
+  top: 25;
+  display: block;
+  position: absolute;
+  margin: 0 0 0 64%;
+  padding: 0 6px 0 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.99);
+  text-align: right;
+  z-index: 10;
+}
+
+.cart h1 {
+  margin-right: 14%;
+}
+
+.cartItem {
+  display: block;
+  width: 65%;
+  height: auto;
+  margin: 5px auto 15px auto ;
+  padding:0 15px 15px 60px;
+  display: block;
+  float: left;
+  border: 1px solid grey;
+  border-radius: 3px;
+  text-align: left;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 7px;
+  z-index: 10;
+  -webkit-box-shadow: 10px 14px 53px -12px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 10px 14px 53px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 10px 14px 53px -12px rgba(0, 0, 0, 0.35);
+}
+
+.removeItemButton {
+  width: 150px;
+  height: 30px;
+  border: 1px solid grey;
+  position: relative;
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.showCartButton {
+  width: 110px;
+  height: 25px;
+  margin: 0 20px 10px 0;
+  color: #3e1bd9;
+  border: 1px solid#3e1bd9;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.showCartButton:hover,
+.removeItemButton:hover, 
+.toggleViewButton:hover,
+.closeCartButton:hover {
+  color: #ffffff !important;
+  background-color: #f272ae;
+  border-radius: 50px;
+  border-color: #ffffff !important;
+  transition: all 0.3s ease 0s;
+}
+
+.closeCartButton {
+  width: 110px;
+  height: 25px;
+  margin: 0 14% 0 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
 }

@@ -14,7 +14,7 @@ class RentCard extends Component {
                                     <p className='title'>{item.title}</p>
                                 </a>
                                 <p className='fontMedium'>Cost: ${item.payment.cost}</p>
-                                <button className='addToCart' 
+                                <button className='addToCartButton' 
                                     onClick={() => 
                                         this.props.addRental(item.title, item.payment.cost)}>ADD TO CART
                                 </button>
@@ -24,7 +24,5 @@ class RentCard extends Component {
             )
         }
     }
-
-
-
+    
 export default RentCard;
