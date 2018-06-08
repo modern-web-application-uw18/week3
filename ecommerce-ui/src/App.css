@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  align-content: center;
+  font-family: "Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  margin: auto;
+  color: green;
+}
+
+.App-header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100px;
+  width: 1050px;
+  background-color: white;
+  padding-top: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.App-logo {
+  height: 80px;
+  margin-right: 50px;
+}
+
+.App-header {
+  height: 40px;
+  border-top: 1.5px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-top-color: limegreen;
+  border-style: solid;
+  width: 1050px;
+  margin: auto;
+}
+
+.App-title {
+  font-size: 2em;
+  color: limegreen;
+  font-weight: bolder;
+  margin-right: 350px;
+}
+
+.ShoppingCart {
+  margin-left:200px;  
+}
+
+.App-intro {
+  font-size: large;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.App-homes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 300px;
+  width: 1050px;
+  align-items: center;
+  background-color: white;
+}
