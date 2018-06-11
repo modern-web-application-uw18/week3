@@ -28,8 +28,8 @@ class Home extends Component {
                 <Description title={title} houseType={houseType} location={location} />
                 <Payment payment={payment} />
                 <Host host={host} rating={rating} />
-                <button onClick={this.props.addToCart}
-                    className={this.props.isInCart(this) ? 'Grey-button' : 'Green-button'}>{this.props.isInCart(this) ? 'Added' : 'Add to Cart'}</button>
+                <button onClick={this.props.isInCart(this) ? null : this.props.addToCart}
+                    className={this.props.isInCart(this) ? 'Home-Gray-button' : 'Home-Green-button'}>{this.props.isInCart(this) ? 'Added' : 'Add to Cart'}</button>
             </div >
         );
     }

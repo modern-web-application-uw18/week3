@@ -10,24 +10,14 @@ export class App extends Component {
 
   constructor(props) {
     super(props);
+    this.addToCart = this.addToCart.bind(this);
     this.state = { items: [] };
   }
 
-  componentDidMount() {
-
-  }
-
-  componentWillUnmount() {
-
-  }
-
-  addToCart = (item) => {
+  addToCart = (home, e) => {
     this.setState((prevState, props) => {
-      console.log('prevState', prevState);
-      console.log('props', props);
-
       const items = prevState.items;
-      items.push(item);
+      items.push(home);
 
       return {
         items: items
@@ -35,35 +25,40 @@ export class App extends Component {
     });
   }
 
-  removeFromCart = (item) => {
-      this.setState((prevState, props) => {
-      console.log('prevState', prevState);
-      console.log('props', props);
-
+  removeFromCart = (item, e) => {
+    this.setState((prevState, props) => {
       const items = prevState.items;
-      items.remove(item);
-
+      for (let index = 0; index < items.length; index++) {
+        if (items[index] === item) {
+          items.splice(index, 1);
+        }
+      }
       return {
         items: items
       };
     });
   }
 
-  isInCart = (item,e) => {
-    this.state.items.forEach(itm => {
-      if (itm === item) {
+  isInCart = (item, e) => {
+    const items = this.state.items;
+    for (let index = 0; index < items.length; index++) {
+      if (items[index] === item) {
         return true;
       }
-    });
+    }
     return false;
   }
 
   total = () => {
     let totalCost = 0;
     this.state.items.forEach(item => {
-      totalCost += item.cost;
+      totalCost += item.payment.cost;
     });
     return totalCost;
+  }
+
+  emptyCart = () => {
+    return this.state.items.length === 0;
   }
 
   render() {
@@ -72,30 +67,32 @@ export class App extends Component {
         <div className="App-header-container">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Homes Away From Home</h1>
-        </div>
-        <header className="App-header">
-        </header>
-        <div className="ShoppingCart">
-          <h3>Shopping Cart</h3>
-          <div className="item-list">
-            {this.state.items.map((home, index) => {
-              return <Item key={index} item={home} />
-            })};
+          {this.emptyCart() ? null : <div className="App-total">Total: ${this.total()}</div>}
+          <div className="App-cart-container">
+            <div>{this.state.items.length}</div>
+            <img src={cart} alt="" />
           </div>
-          <div>{this.total()}</div>
-          <img src={cart} alt="" />
         </div>
-        {/* <ShoppingCart removeFromCart={this.removeFromCart} /> */}
-        <header className="App-header">
-        </header>
+        <header className="App-header-line"></header>
+        {this.emptyCart() ? null : (
+          <div className="App-ShoppingCart">
+            <div className="App-cart-title">Shopping Cart</div>
+            <div className="item-list">
+              {this.state.items.map((home, index) => {
+                return <Item key={index} item={home}
+                  removeFromCart={e => this.removeFromCart(home, e)} />;
+              })}
+            </div>
+          </div>
+        )}
         <p className="App-intro">
           Browse our accommodations
         </p>
         <div className="App-homes-list" >
           {airbnbs.map((home, index) => {
             return <Home key={index} home={home}
-              addToCart={this.addToCart}
-              isInCart={this.isInCart} />;
+              addToCart={e => this.addToCart(home, e)}
+              isInCart={e => this.isInCart(home, e)} />;
           })}
         </div >
       </div>

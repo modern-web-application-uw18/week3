@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render with title, description, image, etc. 1`] = `
+<div
+  className="Home"
+>
+  <div
+    className="Home-image-container"
+  >
+    <img
+      alt=""
+      src="https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80"
+    />
+  </div>
+  <div
+    className="Description"
+  >
+    <div>
+      Entire House
+       · 
+      <span>
+        Stockholm
+        , 
+        Sweden
+      </span>
+    </div>
+    <div
+      className="Home-Title"
+    >
+      Quaint 3-bedroom home in Gamla stan
+    </div>
+  </div>
+  <div>
+    $
+    230
+     per night 
+    <span>
+       · 
+      Free cancellation
+    </span>
+  </div>
+  <div
+    className="Host"
+  >
+    Olivia
+     
+     · 
+    <span>
+      83
+       reviews ·
+      <span
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "direction": "ltr",
+            "display": "inline-block",
+          }
+        }
+      >
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="gray-star.png"
+          />
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              src="green-star.png"
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="gray-star.png"
+          />
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              src="green-star.png"
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="gray-star.png"
+          />
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              src="green-star.png"
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="gray-star.png"
+          />
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              src="green-star.png"
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="gray-star.png"
+          />
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              src="green-star.png"
+            />
+          </span>
+        </span>
+      </span>
+    </span>
+  </div>
+  <button
+    className="Home-Green-button"
+    onClick={undefined}
+  >
+    Add to Cart
+  </button>
+</div>
+`;

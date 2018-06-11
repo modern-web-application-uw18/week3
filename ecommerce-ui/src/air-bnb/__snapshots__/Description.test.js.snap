@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description should render with title, house type, city, country 1`] = `
+<div
+  className="Description"
+>
+  <div>
+    Entire House
+     · 
+    <span>
+      Valencia
+      , 
+      Spain
+    </span>
+  </div>
+  <div
+    className="Home-Title"
+  >
+    Urban home for six in Valencia
+  </div>
+</div>
+`;

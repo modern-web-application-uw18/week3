@@ -7,8 +7,13 @@ class Host extends Component {
 
     render() {
         
+        const {
+            name,
+            isSuperhost
+        } = this.props.host;
+
         const isSuper = () => {
-            if (this.props.host.isSuperhost) {
+            if (isSuperhost) {
                 return (
                     <span> &middot; Superhost </span>
                 )
@@ -18,7 +23,7 @@ class Host extends Component {
         }
 
         return (
-            <div className="Host">{this.props.host.name} {isSuper()} &middot; <Rating rating={this.props.rating}/></div>
+            <div className="Host">{name} {isSuper()} &middot; <Rating rating={this.props.rating}/></div>
         );
     }
 }

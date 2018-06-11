@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Location should render with city and country 1`] = `
+<span>
+  Helsinki
+  , 
+  Finland
+</span>
+`;

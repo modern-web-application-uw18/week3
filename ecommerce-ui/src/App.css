@@ -22,15 +22,15 @@
   margin-right: 50px;
 }
 
-.App-header {
-  height: 40px;
+.App-header-line {
+  height: 25px;
   border-top: 1.5px;
   border-left: 0px;
   border-right: 0px;
   border-bottom: 0px;
   border-top-color: limegreen;
   border-style: solid;
-  width: 1050px;
+  width: 1100px;
   margin: auto;
 }
 
@@ -38,11 +38,42 @@
   font-size: 2em;
   color: limegreen;
   font-weight: bolder;
-  margin-right: 350px;
+  margin-right: 300px;
 }
 
-.ShoppingCart {
-  margin-left:200px;  
+.App-total {
+  font-size: 1.4em;
+  color: limegreen;
+  font-weight: 500;
+  height: 100px;
+  width: 125px;
+  margin-top: 30px;
+}
+
+.App-cart-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100px;
+  width: 60px;
+  color: limegreen;
+  font-weight: 700;
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.App-ShoppingCart {
+  margin-left: 20px;
+}
+
+.App-cart-title{
+  height: 50px;
+  width: 1050px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 25px;
 }
 
 .App-intro {

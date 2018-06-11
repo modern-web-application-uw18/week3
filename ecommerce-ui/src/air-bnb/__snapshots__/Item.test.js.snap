@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item should render with cost and description 1`] = `
+<div>
+  $
+  130
+   per night 
+  <span>
+     · 
+    Free cancellation
+  </span>
+</div>
+`;

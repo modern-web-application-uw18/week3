@@ -10,7 +10,7 @@ class Description extends Component {
         return (
             <div className="Description">
                 <div>{this.props.houseType} &middot; <Location location={this.props.location}/></div>
-                <div className="House-Title">{this.props.title}</div>
+                <div className="Home-Title">{this.props.title}</div>
             </div>
         );
     }
