@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  align-content: center;
+  font-family: "Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  margin: auto;
+  color: green;
+}
+
+.App-header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100px;
+  width: 1050px;
+  background-color: white;
+  padding-top: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.App-logo {
+  height: 80px;
+  margin-right: 50px;
+}
+
+.App-header-line {
+  height: 25px;
+  border-top: 1.5px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-top-color: limegreen;
+  border-style: solid;
+  width: 1100px;
+  margin: auto;
+}
+
+.App-title {
+  font-size: 2em;
+  color: limegreen;
+  font-weight: bolder;
+  margin-right: 300px;
+}
+
+.App-total {
+  font-size: 1.4em;
+  color: limegreen;
+  font-weight: 500;
+  height: 100px;
+  width: 125px;
+  margin-top: 30px;
+}
+
+.App-cart-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100px;
+  width: 60px;
+  color: limegreen;
+  font-weight: 700;
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.App-ShoppingCart {
+  margin-left: 20px;
+}
+
+.App-cart-title{
+  height: 50px;
+  width: 1050px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 25px;
+}
+
+.App-intro {
+  font-size: large;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.App-homes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 300px;
+  width: 1050px;
+  align-items: center;
+  background-color: white;
+}

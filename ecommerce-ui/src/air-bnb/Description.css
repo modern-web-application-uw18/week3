@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+.Description {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.Home-Title {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 1em;
+}

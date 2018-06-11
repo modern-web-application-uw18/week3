@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Payment should render with cost and description 1`] = `
+<div>
+  $
+  200
+   per night 
+  <span>
+     · 
+    One night cancellation fee
+  </span>
+</div>
+`;
