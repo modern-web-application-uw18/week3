@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './rentals.css';
 
 class Rentals extends Component {
 
   render() {
     return (
-      <section>
+      <section className="rental-listings">
         {this.props.listings.map((listing, index) =>
-          <div key={index}>
-            <h1>{listing.title}</h1>
+          <div key={index} className="rental-listing">
             <img src={listing.image} alt="" />
-            <p>${listing.payment.cost}</p>
+            <h2 className="rental-listing__title">{listing.title}</h2>
+            <p>
+              Your host: {listing.host.name}
+              {listing.host.isSuperhost ? 'is a Superhost!' : ''}
+            </p>
+            <p>
+              {listing.rating.stars} stars | {listing.rating.reviews} reviews
+            </p>
+            <p>{listing.location.city}, {listing.location.country}</p>
+            <p>
+              ${listing.payment.cost} per night {listing.payment.description ? '|' : ''} {listing.payment.description}
+            </p>
             <button
+              className="btn"
               value={index}
-              onClick={this.props.addRental(index)}>Add to cart</button>
+              onClick={this.props.addRental(index)}>Request to book</button>
           </div>
         )}
       </section>
