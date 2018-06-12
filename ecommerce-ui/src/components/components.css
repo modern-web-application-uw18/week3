@@ -23,7 +23,7 @@
 }
 
 .each-rental {
-    border: 1px solid grey;
+    border: 1px solid black;
     padding: 1em;
     border-bottom-style: none;
 }
@@ -33,7 +33,7 @@
 }
 
 .cart-total {
-    border: 1px solid grey;
+    border: 1px solid black;
     padding: 1em;
     border-bottom-style: none;
     display: inline-block;
@@ -51,7 +51,7 @@ h2 {
 
 h1 {
     font-size: 18px;
-    color: darkblue;
+    color: rgb(88, 0, 139);
 }
 
 img {
