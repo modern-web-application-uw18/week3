@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Cart extends Component {
   render() {
@@ -27,6 +28,10 @@ class Cart extends Component {
       </aside>
     );
   }
+}
+
+Cart.propTypes = {
+  deleteRental: PropTypes.func.isRequired
 }
 
 export default Cart;

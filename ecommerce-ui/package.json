@@ -17,6 +17,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "prop-types": "^15.6.1",
     "reset-css": "^4.0.1"
   }
 }
