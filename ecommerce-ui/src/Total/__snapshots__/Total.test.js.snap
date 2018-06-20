@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Total Component should render the cart without crashing 1`] = `
+<strong>
+  <p
+    className="totalSum"
+  >
+    Total: $
+    0
+  </p>
+</strong>
+`;
