@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Airbnb Should render with correct info on the individual properties 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-name"
+    >
+      Airbnb(clone)
+    </h1>
+  </header>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12"
+    >
+      <section>
+        <form>
+          <div>
+            <h2>
+              Properties in your cart:
+            </h2>
+            <div>
+              <h1>
+                Cart total: 
+                $0
+              </h1>
+            </div>
+          </div>
+        </form>
+      </section>
+      <div
+        className="col-4"
+      >
+        <div
+          className="list"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-4 items"
+            >
+              <h2>
+                Centrally-located Manhattan studio
+              </h2>
+              <img
+                alt="Centrally-located Manhattan studio"
+                src="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+              />
+              <p>
+                Host: 
+                Robert
+                , offering their: 
+                Apartment
+              </p>
+              <p>
+                Where: 
+                New York
+                , 
+                USA
+              </p>
+              <h4>
+                Cost: 
+                $105
+              </h4>
+              <button
+                className="cartBtn"
+                onClick={[Function]}
+                value={0}
+              >
+                Add to cart!
+              </button>
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-4 items"
+            >
+              <h2>
+                Denver apartment outside Union Station
+              </h2>
+              <img
+                alt="Denver apartment outside Union Station"
+                src="https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19f783ae564d7c6da4777cde1a84c1c9&auto=format&fit=crop&w=500&q=80"
+              />
+              <p>
+                Host: 
+                Jamie
+                , offering their: 
+                Apartment
+              </p>
+              <p>
+                Where: 
+                Denver
+                , 
+                USA
+              </p>
+              <h4>
+                Cost: 
+                $130
+              </h4>
+              <button
+                className="cartBtn"
+                onClick={[Function]}
+                value={1}
+              >
+                Add to cart!
+              </button>
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-4 items"
+            >
+              <h2>
+                Quaint 3-bedroom home in Gamla stan
+              </h2>
+              <img
+                alt="Quaint 3-bedroom home in Gamla stan"
+                src="https://images.unsplash.com/photo-1495136568018-11a54caad6b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4d19de84a578b1175e85e0811f41c97&auto=format&fit=crop&w=500&q=80"
+              />
+              <p>
+                Host: 
+                Olivia
+                , offering their: 
+                Entire House
+              </p>
+              <p>
+                Where: 
+                Stockholm
+                , 
+                Sweden
+              </p>
+              <h4>
+                Cost: 
+                $230
+              </h4>
+              <button
+                className="cartBtn"
+                onClick={[Function]}
+                value={2}
+              >
+                Add to cart!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

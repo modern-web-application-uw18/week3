@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem Should render with correct info on the individual properties 1`] = `
+<ul>
+  <li>
+     ($undefined) 
+    <button
+      className="cartBtn-r"
+      onClick={undefined}
+    >
+      Remove from cart
+    </button>
+  </li>
+</ul>
+`;
