@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.Home-flex {
+    padding: 10px;
+}
+
+.Home-horizontal-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Home-container {
+    height: 275px;
+    max-height: 275px;
+    width: 345px;
+    max-width: 345px;
+    background-color: white;
+    border: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+}
+
+.Home-image-container {
+    float: left;
+    width: 330px;
+    height: 275px;
+    padding: 10px;
+    object-fit: cover;
+}
