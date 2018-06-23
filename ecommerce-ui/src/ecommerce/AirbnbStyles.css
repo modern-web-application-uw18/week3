@@ -1,0 +1,27 @@
+.list {
+  padding-top: 5em;
+}
+
+li {
+  list-style: none;
+}
+
+.cartBtn {
+  font-size: .9em;
+  background-color: #ee7600;
+  color: #fff;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.cartBtn-r {
+  font-size: .9em;
+  background-color: #458B74;
+  color: #fff;
+  padding: .25em .5em;
+  margin-left: .5em;
+}
+
+img {
+  width: 300px;
+}
