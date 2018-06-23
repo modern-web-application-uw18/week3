@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyItem Should render with correct info on the individual properties 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-4 items"
+  >
+    <h2 />
+    <img
+      alt={undefined}
+      src={undefined}
+    />
+    <p>
+      Host: 
+      , offering their: 
+    </p>
+    <p>
+      Where: 
+      , 
+    </p>
+    <h4>
+      Cost: 
+      $undefined
+    </h4>
+    <button
+      className="cartBtn"
+      onClick={undefined}
+      value={undefined}
+    >
+      Add to cart!
+    </button>
+  </div>
+</div>
+`;
