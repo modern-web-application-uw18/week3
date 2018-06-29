@@ -6,16 +6,16 @@ class Host extends Component {
 
         const isSuperiorHost = () => {
             if ( this.props.host.isSuperhost ) {
-                return ( <div> Superhost </div> );
+                return ( <span> {this.props.host.name} &middot; Superhost </span> );
             }
             else {
-                return null;
+                return ( <span> {this.props.host.name} </span> );
             }
 
         }
 
         return(
-            <div> {this.props.host.name} {isSuperiorHost()} </div>
+            <span> {isSuperiorHost()} </span>
         )
     };
 }

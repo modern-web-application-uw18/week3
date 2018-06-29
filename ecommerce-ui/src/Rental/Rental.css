@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.Rental {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    max-height: 50px;
+    width: 1200px;
+    margin-left: 10px;
+}
+
+.Rental-image-container {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.Rental-title-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 25px;
+    width: 600px;
+    text-align: left;
+    color: blue;
+}
+
+.Price {
+    margin-left: 300px;
+}
+
+.Rental-button-container {
+    margin-left: 50px;
+}
+
+.Rental-green-button {
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}

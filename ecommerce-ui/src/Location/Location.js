@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 class Location extends Component {
     render() {
-        return ( <div> {this.props.location.city}, {this.props.location.country} </div>
+        return ( <span className="Bolded"> {this.props.location.city}, {this.props.location.country} </span>
         )};
 }
 
-Location.PropTypes = {
+Location.propTypes = {
     city: PropTypes.string.isRequired,
     country: PropTypes.string.isRequired
 }

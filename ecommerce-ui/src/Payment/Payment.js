@@ -3,18 +3,25 @@ import PropTypes from 'prop-types';
 
 class Payment extends Component {
     render() {
-        return (
-            <div> ${this.props.payment.cost} per night {this.props.payment.description} </div>
-        )};
+        if ( this.props.payment.description === "" ) {
+            return(
+                <div> ${this.props.payment.cost} per night </div>
+            )
+        }
+        else {
+            return (
+                <div> ${this.props.payment.cost} per night &middot; {this.props.payment.description} </div>
+            )};
+        }
 }
 
-Payment.PropTypes = {
+Payment.propTypes = {
     cost: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired
 }
 
 Payment.defaultProps = {
-    cost: "150",
+    cost: 150,
     description: "None"
 }
 
