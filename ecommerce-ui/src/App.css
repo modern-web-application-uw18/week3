@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #222;
-  height: 30px;
+  height: 100px;
   padding: 10px;
   color: white;
 }
@@ -38,7 +38,12 @@ img {
   border-style: solid;
   border-radius: 1px solid black;
   display: flex;
-  width: 50%;
+  width: 40%;
   margin: 1rem;
   min-width: 400px;
+}
+
+.rentalPropertyText {
+  text-align: center;
+  padding: 0 1rem;
 }
