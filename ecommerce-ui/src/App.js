@@ -10,25 +10,56 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.addToCart = this.addToCart.bind(this);
+    this.isInCart = this.isInCart.bind(this);
     this.state = { rentals: [] };
   }
 
   addToCart = (home, e) => {
-    return null;
+    this.setState((prevState, props) => {
+      const rentals = prevState.rentals;
+      rentals.push(home);
+      return ({rentals: rentals});
+    });
   }
 
   isInCart = (rental, e) => {
+    const rentals = this.state.rentals;
+    for (let index = 0; index < rentals.length; index++) {
+      if ( rentals[index] === rental ) {
+        return true;
+      }
+    }
     return false;
   }
 
   removeFromCart = (rental, e) => {
-    return null;
+    this.setState((prevState, props) => {
+      const rentals = prevState.rentals;
+      for ( let index = 0; index < rentals.length; index++) {
+        if ( rentals[index] === rental ) {
+          rentals.splice(index, 1);
+       }
+      }
+      return ({rentals: rentals});
+    });
   }
 
   emptyCart = (rental, e) => {
-    return null;
+    const rentals = this.state.rentals;
+    if (rentals.length === 0) {
+      return true;
+    }
+    return false;
   }
 
+  total = () => {
+    let totalAmount = 0;
+    const rentals = this.state.rentals;
+    for (let index = 0; index < rentals.length; index++) {
+      totalAmount += rentals[index].payment.cost;
+    }
+    return totalAmount;
+  }
 
   render() {
     return (
@@ -52,9 +83,9 @@ class App extends Component {
           </div>
         )}
         <div className="App-home-container">
-          {homes.map((home, idx) => {
-            return ( <Home idx={idx} home={home} /> );
-          })}
+{/*           {homes.map((home, idx) => {
+            return ( <Home idx={idx} home={home} isInCart={this.isInCart} /> );
+          })} */}
           {homes.map((home, index) => {
           return (
             <Home key={index} home={home} addToCart={e => this.addToCart(home, e)} isInCart={e => this.isInCart(home,e)} />);
