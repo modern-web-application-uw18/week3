@@ -3,6 +3,7 @@ import './App.css';
 import Properties from './airbnbs.json';
 import Rentals from './Rentals.js';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -23,12 +24,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Find your getaway</h1>
         </header>
-        <div className='cartContainer'>
-          <button>Show Cart</button>
-          <div className='cartContents'>
-            <p>Cart contents:</p>
-          </div>
-        </div>
+
         <div className = 'property'>
           {rentals}
         </div>
