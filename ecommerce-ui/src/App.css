@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  align-content: center;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100px;
+  width: 1200px;
+  padding-top: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  padding-right: 500px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App-home-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 340px;
+  width: 1200px;
+}
+
+.App-shopping-cart-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100px;
+  width: 60px;
+  color: blue;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-content: right;
+}
+
+.App-ShoppingCart {
+  margin-left: 20px;
+}
+
+.App-ShoppingCart-title {
+  height: 50px;
+  width: 1200px;
+  text-align: left;
+  margin-left: 25px;
+}
